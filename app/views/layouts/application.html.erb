@@ -5,8 +5,20 @@
   <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+<<<<<<< HEAD
+	<header class="navbar col-md-12">
+		<%= link_to(image_tag("LGBTHomelessness_Logo.png", :class => "logo", :alt => "logo", :title => "LGBT Homelessness"), "/") %>
+		<nav>
+			<ul>
+				<li><%= link_to "About", about_path %></li>
+				<li><%= link_to "Resources", who_are_you_path %></li>
+				<li>Coming Soon</li>
+				<li><%= link_to "Contact Us", contact_path %></li>
+=======
 	<div class="col-lg-12">
 		<%= link_to(image_tag("LGBTHomelessness_Logo.png", :class => "logo", :alt => "logo", :title => "LGBT Homelessness"), "/") %>
 		<nav>
@@ -15,6 +27,7 @@
 				<li><% link_to "Resources", "who" %></li>
 				<li><% link_to "Volunteer", "volunteer" %></li>
 				<li><% link_to "Contact Us", "contact" %></li>
+>>>>>>> FETCH_HEAD
 			</ul>
 		</nav>
 	</div>
