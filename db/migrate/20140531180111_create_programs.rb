@@ -13,7 +13,7 @@ class CreatePrograms < ActiveRecord::Migration
       t.text :program_timing
       t.string :language_req
       t.string :program_categorization
-      t.string :services
+      t.text :services
 
       t.timestamps
     end
