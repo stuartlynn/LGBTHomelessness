@@ -4,6 +4,11 @@ LGBTHomelessness::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   root 'home#index'
+  get 'about' => "home#about"
+  get 'who_are_you' => "home#who"
+
+  get 'contact' => "home#contact"
+  get 'results' => "home#result"
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
