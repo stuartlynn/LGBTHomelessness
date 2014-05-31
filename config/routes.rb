@@ -10,6 +10,9 @@ LGBTHomelessness::Application.routes.draw do
   get 'contact' => "home#contact"
   get 'results' => "home#result"
 
+  resources :organizations , defaults: { format: 'json' }
+  resources :programs, defaults: {format: 'json'}
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
