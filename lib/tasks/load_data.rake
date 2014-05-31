@@ -1,4 +1,3 @@
-require 'pry'
 
 task :load_data => :environment do
   Organization.delete_all
