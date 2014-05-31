@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  belongs_to: 
+  name: MyString
+  friendliness_rating: MyString
+  min_age: 1
+  max_age: 1
+  health_status_req: MyString
+  gender_req: MyString
+  access_to_services: MyText
+  description: MyText
+  program_timing: MyText
+  language_req: MyString
+  program_categorization: MyString
+  services: MyString
+
+two:
+  belongs_to: 
+  name: MyString
+  friendliness_rating: MyString
+  min_age: 1
+  max_age: 1
+  health_status_req: MyString
+  gender_req: MyString
+  access_to_services: MyText
+  description: MyText
+  program_timing: MyText
+  language_req: MyString
+  program_categorization: MyString
+  services: MyString
