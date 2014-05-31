@@ -1,3 +1,16 @@
 // Place all the styles related to the home controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
+
+.header {display: block; margin-bottom: 3em; max-height: 80px;}
+
+.logo {max-width: 150px; float: left; display: block; margin: .5em 0;}
+
+nav {float: right;}
+nav li { list-style: none; float: left; padding: 1em; font-size: 1.25em; text-transform: uppercase;}
+nav li a {color: #666;}
+nav li a:hover {color: #D43F26; text-decoration: none;};
+
+.call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; color: #fff; padding: 10px; font-size: 2em;}
