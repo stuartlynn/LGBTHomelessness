@@ -1,1 +1,66 @@
-<h1><%= content_for(:title, "How can we help you?") %></h1>
+<div class="first col-lg-12">
+	<h2><%= content_for(:title, "How can we help you?") %>You are not alone.</h2>
+	
+	<p>We have a directory of services and information about how to access them. In order to help you find programs that can help you, please fill out the form below. We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</p>
+
+	<label>What services do you need?</label> (multiple choice)
+	<input type="checkbox" name="vehicle" value="Bike">Housing/Shelter, Food & Drop-In
+	Health including Counseling
+	Legal including Domestic Violence
+	Education and Employment
+	Hotline
+	Art and Activism
+
+	<label id="age">What is your current age?<span class="required">*</span></label>
+		<select name="age" id="age">
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26</option>
+		</select>
+	</select>
+
+	<label>What is your sexual orientation?</label>
+	<select name="orientation" id="sexualOrientation">
+		<option value="gay">Gay</option>
+		<option value="lesbian">Lesbian</option>
+		<option value="bisexual">Bisexual</option>
+		<option value="straight">Straight</option>
+	</select>
+
+	<label>What gender do you identify as?</label>
+	Male
+	Female
+	Non-Conforming
+
+	<p>I want Spanish-speaking programs only:</p>
+
+	<div class="radio">
+	  <label>
+	    <input type="radio" name="optionNo" id="optionNo" value="y">
+	    Yes
+		</input>
+	  </label>
+	   <label>
+	    <input type="radio" name="optionNo" id="optionNo" value="n" checked>
+	    No
+		</input>
+	  </label>
+	</div>
+
+
+	<button class="small-">Submit</button>
+
+
+</div>
+
