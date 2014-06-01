@@ -8,6 +8,7 @@ LGBTHomelessness::Application.routes.draw do
   get 'who_are_you' => "home#who"
   get 'volunteer' => "home#volunteer"
   get 'contact' => "home#contact"
+  get 'calendar' => "home#calendar"
   get 'results' => "home#result"
 
   resources :organizations do
