@@ -42,11 +42,11 @@
     <%= @program.services %> </h3>
   <%end%>
 
-  <% if @program.health_status_req != "" || @program.gender_req != "" || @program.sexual_orientation_req != "" %>
+  <% if @program.health_status_req != "" || @program.gender_req != "" || @program.sexual_orientation_requirement != "" %>
     <h3>Eligibility Requirements:
         <%= @program.health_status_req %> 
         <%= @program.gender_req %>  
-        <%= @program.sexual_orientation_req %>
+        <%= @program.sexual_orientation_requirement %>
     </h3>
   <%end%>
 
