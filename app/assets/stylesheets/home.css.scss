@@ -2,9 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body {background: #f9f9f9;}
+
 body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
-header {display: block; margin-bottom: 3em; background: #fff;}
+p {font-size: 16px;}
+p a {color: #666; font-weight: 700;}
+p a:hover {color: #D43F26;}
+
+header {display: block; margin-bottom: 0 !important; padding-bottom: 1em; background: #fff;}
 
 .logo {max-width: 150px; float: left; display: block; margin: .5em 0;}
 
@@ -17,3 +23,5 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 
 .call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; padding: 10px; font-size: 2em;}
 .call-to-service a, a:hover {color: #fff; text-decoration: none;}
+
+.serving {text-align: center;}
