@@ -30,9 +30,23 @@ class OrganizationsController < ActionController::Base
 
 
     @organizations = query.all.collect{|p| p.organization}.uniq
-    
+
     respond_with @organizations
   end
+
+  def create
+    @organization = Organization.create(organization_params)
+    redirect_to @organization
+  end
+
+  def organization_params
+    params[:organization].permit([:name, :description, :address, :address2, :city, :state, :zip, :phone_no, :website, :email, :latitude, :longitude])
+  end
+
+  def new
+    @organization = Organization.new
+  end
+
 
   def show
     @organization = Organization.find(params[:id])
