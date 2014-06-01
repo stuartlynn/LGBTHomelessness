@@ -4,7 +4,11 @@
 <div class='programs container'>
   <h2>Programs</h2>
   <%@organization.programs.each do |program| %>
-    <li> <%=link_to program.name, program%> </li>
+    <% if program.name == "" %>
+      <li> <%=link_to @organization.name, program_path(program.id) %> </li>
+    <%else%>
+      <li> <%=link_to program.name, program_path(program.id)%> </li>
+    <%end%>
   <%end%>
 </div><br/>
 
