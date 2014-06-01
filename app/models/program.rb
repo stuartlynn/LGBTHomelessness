@@ -9,7 +9,17 @@ class Program < ActiveRecord::Base
   scope :language_needed, ->(language){where("language_req like ?", language)}
   scope :services_offered, ->(request){where("services like ?", request)}
 
-  def self.survey_query(start_age, end_age, friendly = "", language = "", gender = "")
-    self.age_range(start_age,end_age).friendliness(friendly).language_needed(language).gender_required(gender)
+  def self.service_query(query, service_array)
+    output=[]
+    query.each do |program|
+      service_array.each do |service|
+        if program.services.include?(service)
+          output << program
+        end
+      end
+    end
+    output
   end
+end
+
 end
