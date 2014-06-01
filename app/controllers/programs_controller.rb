@@ -8,7 +8,6 @@ class ProgramsController < ActionController::Base
   end
 
   def show
-    p params
     @program = Program.find(params[:id])
     respond_with @program
   end
