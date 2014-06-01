@@ -9,7 +9,7 @@ development:
   encoding: unicode
   database: LGBT
   pool: 5
-  username: stuartlynn
+  username: laurendorman
   password:
 
 # Warning: The database defined as "test" will be erased and
@@ -20,7 +20,7 @@ test:
   encoding: unicode
   database: LGBT_test
   pool: 5
-  username: stuartlynn
+  username: laurendorman
   password:
 
 
