@@ -50,6 +50,9 @@ class OrganizationsController < ActionController::Base
 
   def new
     @organization = Organization.new
+    @organizations = query.collect{|p| p.organization}.uniq
+    
+    respond_with @organizations
   end
 
   def show
