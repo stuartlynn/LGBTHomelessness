@@ -1,1 +1,14 @@
-<h1><%= content_for(:title, "Contact Us") %></h1>
+<div class="main col-lg-12">
+	<h2><%= content_for(:title, "Contact Us") %>Contact Us</h2>
+		<form>
+            <fieldset>
+            	<label name="name">Name</label>
+                <input type="text" id="name" name="name" class="contact input-block-level" placeholder="Name">
+                <label name="email">Email</label>
+                <input type="text" id="email" name="email" class="contact input-block-level" placeholder="Email">
+                <label name="message">Your Message</label>
+                <textarea rows="3" id="message" name="message" class="contact input-block-level" placeholder="Message"></textarea>
+                <button type="submit" class="contact-button">Submit</button>
+            </fieldset>
+        </form>
+</div>

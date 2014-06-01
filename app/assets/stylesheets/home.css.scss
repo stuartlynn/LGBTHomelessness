@@ -21,7 +21,7 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 
 .jumbotron h1, h2, h3, h4, h5, h6 {line-height: 1;}
 
-.first {padding-top: 2em;}
+.main {padding: 2em;}
 
 .call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; padding: 10px; font-size: 2em;}
 .call-to-service a, a:hover {color: #fff; text-decoration: none;}
@@ -35,3 +35,6 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 .required {color: #D43F26;}
 
 .resources-button {display: block; border: 0px; text-align: center; margin: 2em 0; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px;}
+.contact-button {display: block; border: 0px; text-align: center; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px; margin: .5em 0;}
+
+.contact {max-width: 500px;}
