@@ -18,6 +18,7 @@
 
       <ul class='list-group results'>
         <% @organizations.each do |organization| %>
+<<<<<<< HEAD
           <li class="friendliness">
               <% if @program.friendliness_rating == "LGBT Focused" %>
               <%= image_tag("lgbt_focused.png", :alt => "LGBT Focused", :title => "LGBT Focused") %>
@@ -27,6 +28,9 @@
             <%end%>
         </li>
           <li class='list-group-item place' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' ><%= link_to organization.name, organization %> <span class="badge"><%=organization.programs.count%></span></li>
+=======
+          <li class='list-group-item place sortable' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' ><%= link_to organization.name, organization %> <span class="badge"><%=organization.programs.count%></span></li>
+>>>>>>> FETCH_HEAD
         <%end%>
       </ul>
   <%else%>
