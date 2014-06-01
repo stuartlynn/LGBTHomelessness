@@ -1,23 +1,44 @@
 <h1><%=@organization.name%></h1>
 
-
-<div class='programs'>
-  <h2>Programs</h2>
-  <%@organization.programs.each do |program| %>
-    <li> <%=link_to program.name, program%> </li>
-  <%end%>
+<div class="container">
+  <%= map(:center => {
+        :latlng => [@organization.latitude, @organization.longitude],
+        :zoom => 12,
+      },
+      :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+      :markers => [{
+          :latlng => [@organization.latitude, @organization.longitude]
+      }],
+      :max_zoom => 16
+  ) %>
 </div>
 
 
-<div class='address'>
+
+
+<div class='programs container'>
+  <h2>Programs</h2>
+  <%@organization.programs.each do |program| %>
+    <% if program.name == "" %>
+      <li> <%=link_to @organization.name, program_path(program.id) %> </li>
+    <%else%>
+      <li> <%=link_to program.name, program_path(program.id)%> </li>
+    <%end%>
+  <%end%>
+</div><br/>
+
+
+<div class='address container'>
+    <h2> Contact Info</h2>
     <p> <%=@organization.address%>
       <%=@organization.address2%><br/>
-      <%=@organization.city%><br/>
-      <%=@organization.state%><br/>
+      <%=@organization.city%>, <%=@organization.state%><br/>
       <%=@organization.zip%><br/>
     </p>
-    <p> Phone no : <%=@organization.phone_no%></p>
-    <p> email: <%=@organization.email%> </p>
+    <p> Phone number: <%=@organization.phone_no%></p>
+    <p> Email: <%=@organization.email%> </p>
+    <p> Website: <%=link_to @organization.website, @organization.website %></a> </p>
+    <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' > You are currently  </p>
 </div>
 
 
