@@ -3,15 +3,17 @@
 	
 	<p>We have a directory of services and information about how to access them. In order to help you find programs that can help you, please fill out the form below. We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</p>
 
-	<label>What services do you need?</label> (multiple choice)
-	<input type="checkbox" name="vehicle" value="Bike">Housing/Shelter, Food & Drop-In
-	Health including Counseling
-	Legal including Domestic Violence
-	Education and Employment
-	Hotline
-	Art and Activism
+	<form>
+	<p>What services do you need?</p>
+	<input type="checkbox" name="housingAndFood" value="Housing/Shelter, Food & Drop-In"> Housing/Shelter, Food & Drop-In<br/>
+	<input type="checkbox" name="health" value="Health including Counseling"> Health including Counseling<br/>
+	<input type="checkbox" name="legal" value="Legal including Domestic Violence">
+	Legal including Domestic Violence<br/>
+	<input type="checkbox" name="educationAndEmployment" value="Education and Employment"> Education and Employment</br>
+	<input type="checkbox" name="hotline" value="Hotline"> Hotline<br/>
+	<input type="checkbox" name="artAndActivism" value="Art and Activism"> Art and Activism</br></br>
 
-	<label id="age">What is your current age?<span class="required">*</span></label>
+	<p>What is your current age?<span class="required"> *</span></p>
 		<select name="age" id="age">
 		<option value="13">13</option>
 		<option value="14">14</option>
@@ -28,9 +30,8 @@
 		<option value="25">25</option>
 		<option value="26">26</option>
 		</select>
-	</select>
 
-	<label>What is your sexual orientation?</label>
+	<p>What is your sexual orientation?</p>
 	<select name="orientation" id="sexualOrientation">
 		<option value="gay">Gay</option>
 		<option value="lesbian">Lesbian</option>
@@ -38,28 +39,24 @@
 		<option value="straight">Straight</option>
 	</select>
 
-	<label>What gender do you identify as?</label>
-	Male
-	Female
-	Non-Conforming
+	<p>What gender do you identify as?</p>
+	<select name="sex" id="sex">
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>
 
 	<p>I want Spanish-speaking programs only:</p>
 
 	<div class="radio">
-	  <label>
-	    <input type="radio" name="optionNo" id="optionNo" value="y">
-	    Yes
-		</input>
-	  </label>
-	   <label>
-	    <input type="radio" name="optionNo" id="optionNo" value="n" checked>
+	    <input type="radio" name="spanish" id="optionYes" value="y">
+	    Yes</br>
+	    <input type="radio" name="spanish" id="optionNo" value="n" checked>
 	    No
-		</input>
-	  </label>
 	</div>
 
 
-	<button class="small-">Submit</button>
+	<button class="resources-button">Submit</button>
+	</form>
 
 
 </div>
