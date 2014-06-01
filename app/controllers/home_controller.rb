@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
- 
+
   end
 
   def about
@@ -9,7 +9,7 @@ class HomeController < ApplicationController
   end
 
   def who
-
+    
   end
 
   def results
