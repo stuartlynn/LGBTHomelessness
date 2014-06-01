@@ -24,11 +24,15 @@ $(document).ready(function(){
       var radius = e.accuracy / 2;
 
 
-      href =$(".directions").first().attr("href")
+      href =$(".directions").each(function(){
+        href = $(this).attr("href")
 
-      href = href.replace("ll", "daddr")
-      href+= "&saddr="+e.latlng.lat+","+e.latlng.lng
-      $(".directions").attr("href", href)
+        href = href.replace("ll", "daddr")
+        href+= "&saddr="+e.latlng.lat+","+e.latlng.lng
+        $(this).attr("href", href)
+
+
+      });
 
       var myIcon = L.divIcon({className: 'user_location'});
 			L.marker(e.latlng, {icon: myIcon}).addTo(map)
@@ -59,6 +63,6 @@ $(document).ready(function(){
       })
 
     });
-    map.locate({setView: true, maxZoom: 10});
+    map.locate({setView: true, maxZoom: 13});
   }
 })
