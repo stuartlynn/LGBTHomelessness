@@ -3,8 +3,8 @@ task :load_data => :environment do
   Organization.delete_all
   Program.delete_all
 
-  orgs  = IO.read("data/Organization.csv").split("\n")[1..-1].collect{|l| l.split(",")}
-  progs = IO.read("data/Program.csv").split("\n")[1..24].collect{|l| l.split(",")}
+  orgs  = IO.read("data/Organization.tsv").split("\n")[1..-1].collect{|l| l.split("\t")}
+  progs = IO.read("data/Program.tsv").split("\n")[1..24].collect{|l| l.split("\t")}
   look_up = {}
   orgs.each do |org_data|
     o = Organization.create(name: org_data[1],

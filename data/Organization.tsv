@@ -1,0 +1,323 @@
+org_id	organization_name	address	address2	city	state	zip	phone	website_url	public_email	Latitude	Longitude
+1	The Night Ministry	1110 N. Noble Street		Chicago	IL	60622	773-549-4158	http://www.thenightministry.org/001_programs/040_youth_services/030_youth_housing/040_the_crib/		41.901831	-87.662791
+2	Center on Halsted	3656 N. Halsted Street		Chicago	IL	60613	773.472.6469	http://www.centeronhalsted.org/	youthintake@centeronhalsted.org	41.957776	-87.655647
+3	360 Youth Services	1305 W. Oswego Rd.		Naperville	IL	60540	630.961.2992	http://www.360youthservices.org/	dcarr@360youthservices.org	41.763492	-88.175111
+4	Lake View Presbyterian Church	716 West Addison Street		Chicago	IL	60613	773.281.2655	http://www.lakeviewpresbyterian.org/how-we-serve/cafe-pride/	alex@lakeviewpresbyterian.org	41.947432	-87.647848
+5	Chicago House	1925 N. Clybourn		Chicago	IL	60614	773.248.5200	http://www.chicagohouse.org/	info@chicagohouse.org	41.921254	-87.663876
+6	A Safe Haven Foundation	2750 W Roosevelt		Chicago	IL	60608	773.435.8300	http://www.asafehaven.org		41.848922	-87.669519
+7	La Casa Norte			Chicago	IL		773.270.5126	www.lacasanorte.org			
+8	Unity Parenting and Counseling	7320 S Yale		Chicago	IL	60621	773.891.1365			41.775305	-87.641642
+9	Teen Living Programs	162 W. Hubbard St., Suite 400		Chicago	IL	60654	312-568-5700	www.teenliving.org	info@teenliving.org	41.890105	-87.633531
+10	Broadway United Methodist Church	 		Chicago	IL	60657	773.348.2679	www.youthlounge.org	cindy@youthlounge.org		
+11	The Law Project of the Chicago Coalition for the Homeless			Chicago	IL		1-800-940-1119	https://sites.google.com/site/lawprojectcch/youth-futures	beth@chicagohomeless.org		
+12	Y.E.P.P. (Youth Empowerment Performance Project)			Chicago	IL			www.wesayyepp.com			
+13	Community Counseling Services of Chicago	4740 N Clark St		Chicago	IL	60640		www.c4chicago.org 		41.967815	-87.667299
+14	Task Force Prevention and Community Services	9 N. Cicero 		Chicago	IL	60644	773-473-4100			41.892953	-87.761562
+15	Vida/Sida Generation L	2703 W. Division St. 		Chicago	IL	60622	773-278-6737 			41.902649	-87.694653
+16	Chicago Public Schools			Chicago	IL						
+17	Blue Sky Inn	3720 N. Lincoln Ave.		Chicago	IL	60613		http://blue-sky-bakery.org/employment.html	info@blueskyinn.org 	41.949177	-87.675673
+18	Lakeview Pantry	3831 N Broadway St.		Chicago	IL	60613	773-525-1777 	www.lakeviewpantry.org		41.95219	-87.649615
+19	Saint Vincent Depaul Church (Catholic Church)	1010 West Webster Avenue		Chicago	IL	60614	773-325-8610 	www.stvdep.org 		41.922204	-87.653943
+20	Department of Human Services						311				
+21	Emergency Fund	651 W Washington Blvd # 504		Chicago	IL	60661	312-379-0301 	www.emergencyfund.org		41.883201	-87.63994
+22	Direct 2 Food							www.direct2food.org 			
+23	Nutrition & Women, Infant and Children Services (WIC)						312-747-9150				
+24	SNAP (Food Stamps)						800-843-6154	www.dhs.state.il.us/page.aspx?item=33698			
+25	AIDS Foundation of Chicago			Chicago	IL	60606	312-922-2322 	www.aidschicago.org			
+26	T-PAN (Test Positive Aware Network)	5537 N. Broadway St.		Chicago	IL	60640	773-989-9400	www.tpan.com 		41.982738	-87.660048
+27	Chicago Department of Public Health - Lakeview Specialty Clinic	2861 North Clark Street		Chicago	IL	60657	312-744-5507	www.gettestedchicago.com		41.934563	-87.646308
+28	Chicago Department of Public Health - South Austin Public Health Center	4958 W. Madison		Chicago	IL	60644	312-746-4871	www.gettestedchicago.com		41.892953	-87.761562
+29	Chicago Department of Public Health - West Town Specialty Clinic	2418 W. Division		Chicago	IL	60622	312-744-5464	www.gettestedchicago.com		41.903355	-87.666496
+30	Chicago Department of Public Health - Englewood Specialty STD Clinic	641 W. 63rd Street		Chicago	IL	60621	312-747-8900	www.gettestedchicago.com		41.779556	-87.641629
+31	Steamworks Chicago	3246 North Halsted		Chicago	IL	60657	773-929-6080			41.94038	-87.65318
+32	The Ruth M. Rothstein CORE Center	2020 W. Harrison		Chicago	IL	60612	312-572-4700			41.881661	-87.692626
+33	Uptown Teen Health Center	4867 N. Broadway		Chicago	IL	60640	773-506-4624			41.970873	-87.658869
+34	The Care Center at Jackson Park Hospital	1625 E. 75th St	2nd floor	Chicago	IL	60649	773-947-7271			41.759792	-87.564304
+35	Direct 2 Housing							www.direct2housing.org			
+36	Transformative Justice Law Project of Illinois	4707 N. Broadway	Suite 307	Chicago	IL	60640	773-272-1822	www.tjlp.org 	info@tjlp.org	41.967633	-87.658702
+37	First Defense Legal Aid						1-800-LAW-REP-4 (1-800-529-7374) 				
+38	Life Span (Kris Krafka)	20 E Jackson Blvd # 500		Chicago	IL	60604	312-408-1210	www.life-span.org 		41.878245	-87.625774
+39	Legal Assistance Foundation of Chicago	120 S. LaSalle Street, Ste. 900		Chicago	IL	60603	312-341-1070	www.lafchicago.org		41.879869	-87.632774
+40	Coalition for the Homeless Law Project						1-800-940-1119	www.chicagohomeless.org/programs-campaigns/legal-aid/law-project			
+41	Loyola ChildLaw Clinic	16 East Pearson St., 11th Floor		Chicago	IL	60611	312-915-6481 			41.892509	-87.61617
+42	National Immigant Justice Center	208 S. LaSalle St., Suite 1818 		Chicago	IL	60604	312-660-1370 	www.immigrantjustice.org 		41.879138	-87.632606
+43	Howard Brown Health Center	4025 North Sheridan Road		Chicago	IL	60613	773-388-1600 	www.howardbrown.org		41.955195	-87.654432
+44	All Kids Hotline						866-255-5437				
+45	Chicago Rape Crisis Hotline						888-293-2080 				
+46	Rape Victim Advocates						312-443-9603				
+47	YMCA of Metropolitan Chicago						888-293-2080	www.ywca.org/site/pp.asp?c=euLRI7OZH&b=62681 			
+48	Chicago Lakeshore Hospital	4840 North Marine Dr.		Chicago	IL	60640	800-888-0560	www.chicagolakeshorehospital.com/GLBT/ 		41.970198	-87.650599
+49	Substance Abuse Mental Health Services Administration Information Network						800-662-HELP (4357) 	www.samhsa.gov			
+50	Recovery Point (Community Counseling Services of Chicago)	4740 North Clark Street		Chicago	IL	60640	773-769-0205 	www.c4chicago.org/services/substance-use 		41.967815	-87.667299
+51	National Suicide Hotline						800-784-2433 				
+52	The Trevor Project						866-4UTrevor, 866-488-7386	www.thetrevorproject.org 			
+53	Young Women's Empowerment Project			Chicago	IL		312-806-2155	www.youarepriceless.org 			
+54	Chicago Recovery Alliance			Chicago	IL		773-471-0999	www.anypositivechange.org/crainfo.html 			
+55	Community Outreach Intervention Projects (COIP)	4407 N. Broadway		Chicago	IL	60640	773-561-3177	www.coip.org 		41.962133	-87.655339
+56	Street Youth R!se Up/Street Youth in Motion							www.youarepriceless.org 	Dominique@youarepriceless.org 		
+57	H.E.L.L.O. (Homeless Exprerts Living Life's Obstacles)						773-784-9000 	www.thenightministry.org 			
+58	Marwen	833 North Orleans Street		Chicago	IL	60610	312- 944-2418	www.marwen.org		41.897606	-87.636879
+59	ARC Gallery and Educational Foundation	832 W. Superior Street #204		Chicago	IL	60642	312-733-2787 	www.arcgallery.org		41.895595	-87.634448
+60	Art Forward	1759 N. Kedzie Avenue		Chicago	IL	60647	773-386-0686	www.artforward.org 		41.913646	-87.706479
+61	Experimental Sound Studio (ESS)										
+62	Urban Art Retreat	1957–59 S. Spaulding Avenue		Chicago	IL	60623	773-542-9126 	www.urbanartretreat.com 		41.853765	-87.70739
+63	Rumble Arts	3413 West North Avenue		Chicago	IL	60647	773-278-4441 	www.rumblearts.com 		41.909916	-87.712564
+64	Insight Arts	6934 N. Glenwood Ave #2C		Chicago	IL	60626	773-338-5933	www.insightartsliberation.org/home.html 	info@insightartsliberation.org	42.005448	-87.665902
+65	Mission Arts			Chicago	IL		773-827-4460	www.missionartist.org 	info@missionartist.org		
+66	National Domestic Violence Hotline						800-799-SAFE, 800-799-7233 	www.thehotline.org			
+67	Project Out at South Suburban Family Shelter			Homewood	IL		24-Hour Hotline: 708-335-3028, 877-335-3020 (toll free) 	www.ssfs1.org 			
+68	Connections for Abused Women and their Children			Chicago	IL		24 hour hotline - 773-278-4566; Daytime - 773-278-4110, (TTY) 773-278-4114	www.cawc.org 			
+69	Mujeres Latinas En Accion	2124 West 21st Place		Chicago	IL	60608	312-738-5358, 773-890-7676	www.mujereslatinasenaccion.org/index.html 		41.853061	-87.679354
+70	Avance Domestic Abuse Intervention Program	4765 N Lincoln Suite 203/204		Chicago	IL	60625	773-293-1770 	www.avancecounseling.com/domestic_violence_program		41.971107	-87.702482
+71	Between Friends						773-724-5232	www.betweenfriendschicago.org			
+72	Domestic Violence Legal Clinic	555 W. Harrison St., Suite 1900 		Chicago	IL	60604	312.325.9155	www.dvlcchicago.org		41.873879	-87.641802
+73	Chicago Police Department						Non-Emergency: 311				
+74	American Civil Liberties Union	180 N. Michigan Ave., Suite 2300		Chicago	IL	60601	312-201-9740 	www.aclu-il.org/index.shtml 		41.885537	-87.624987
+75	Chicago Lawyers Committee for Civil Rights Under the Law	100 North LaSalle Street, Suite 600,		Chicago	IL	60602	312-630-9744 	www.clccrul.org/index.html 		41.883574	-87.632726
+76	Chicago Commission on Human Relations	740 N Sedgwick St # 3		Chicago	IL	60654	312-744-4111 	www.cityofchicago.org/city/en/depts/cchr.html 		41.89551	-87.638566
+77	IL Department on Human Rights	100 West Randolph Street, Suite 10-100		Chicago	IL	60601	312-814-6200, TTY 217-785-5125 	www.state.il.us/dhr		41.883993	-87.619706
+78	AIDS Legal Council	180 N. Michigan Avenue, Suite 2110		Chicago	IL	60601	866-506-3038, 312-427-8990 	www.aidslegal.com 		41.885537	-87.624987
+79	Neon Street Dorms	4506 N Sheridan		Chicago	IL	60640	773-433-1290	http://www.heartlandalliance.org/whatwedo/our-programs/directory/neon-street-programs.html	jfilicky@heartlandalliance.org	41.970313	-87.663045
+80	Direct Services from Project VIDA	2659 South Kedvale Avenue		Chicago	IL	60623	(773) 277-2291	http://www.projectvida.org/		41.8425	-87.727792
+82	Illinois HIV/STI/STD Hotline						(800) 243-2437				
+83	South Side Help Center	1525 East 55th Street - Suite 300-A		Chicago	IL	60615	773.701.4246	http://www.southsidehelp.org/2msm.html		41.800392	-87.603826
+84	Lurie Children's Hospital of Chicago	225 E. Chicago Ave.		Chicago	IL	60611	(773) 303-6056	https://www.luriechildrens.org/en-us/care-services/specialties-services/gender-program/Pages/index.aspx	Jleininger@luriechildrens.org	41.896305	-87.621743
+85	Affinity Community Services	1424-28 E. 53rd St., Ste. 306		Chicago	IL	60615	(773) 324-0377	http://affinity95.org/		41.799846	-87.590688
+86	Provident Hospital	500 East 51st Street		Chicago	IL	60615	312-572-2724	http://www.providenthiv.com/		41.802605	-87.613763
+87	Jackson Park Hospital	1625 E. 75th St., 2nd floor		Chicago	IL	60649	(773) 947-7271	http://www.jacksonparkhospital.org/		41.758588	-87.58493
+88	National Runaway Safeline						1-800-RUNAWAY (786-2929) 				
+89	Statewide CCBYS Information Line						1-877-870-2663 				
+90	IL Domestic Violence Hotline						1-877-863-6338				
+91	Chicago Domestic Violence Hotline						1-877-863-6338 				
+92	LGBTQ Crisis Hotline						1-773-871-2273				
+93	Metropolitan Family Services 63rd Street Corridor Center for Working Families	747 W. 63rd St., Bldg. V, Room 106		Chicago	IL	60621	7734873723	http://www.smartcommunitieschicago.org/About-Us5/Our-Partners/Englewood.html		41.7796652	-87.6443337
+94	A Knock At Midnight	400 W. 76th Street, Ste. 206		Chicago	IL	60620	7734882960	http://www.akamworks.org/infopage/computer-literacy		41.7563478	-87.635009
+95	Albany Park Community Center	5121 N. Kimball		Chicago	IL	60625	7734333743	http://www.apcc-chgo.org/programs/adult/ctc		41.974624	-87.713159
+96	Alternatives, Inc.	4730 N. Sheridan Road		Chicago	IL	60640	7735067474	http://www.alternativesyouth.org		41.968167	-87.6552449
+97	Altgeld Library	13281 S. Corliss Avenue		Chicago	IL	60827	3127473270	http://www.chipublib.org/branch/details/library/altgeld/		41.6547286	-87.6022572
+98	Altgeld Gardens and Phillip Murray Homes	951 E. 132nd Place		Chicago	IL	60627	3129137132	http://www.terau.com		41.6589714	-87.5965854
+99	Center of Higher Development - Archer Courts	2242 South Princeton		Chicago	IL	60616	(888) 317-5480	http://www.ctcconnect.org/Center-of-Higher-Development-Archer-Courts		41.85111	-87.636105
+100	Archer Heights Library	5055 S. Archer Avenue		Chicago	IL	60632	3127479241	http://www.chipublib.org/branch/details/library/archer-heights/		41.8008995	-87.7266121
+101	Arthur D. Griffin Community Learning Center	1613 West Washington Blvd.		Chicago	IL	60612	3122438047			41.8829897	-87.6672752
+102	Arturo Velasquez Institute (AVI)	2800 S. Western Avenue		Chicago	IL	60608	7738384500	http://www.ccc.edu/colleges/daley/departments/pages/arturo-velasquez-institute.aspx		41.8410641	-87.6854531
+103	Asian Human Services	4820 N. Broadway, 3rd Floor		Chicago	IL	60640	7732938100	http://www.ahschicago.org		41.9696981	-87.6599255
+104	Asian Human Services, LEAF Program	2838 W. Peterson		Chicago	IL	60659	7735644944	http://www.ahschicago.org		41.990699	-87.700837
+105	Austin Library	5615 W. Race Avenue		Chicago	IL	60644	3127465038	http://www.chipublib.org/branch/details/library/austin/		41.889135	-87.766925
+106	Austin Community Technology Center	4943 W. Quincy		Chicago	IL	60644	7736265685	http://www.mercyhousing.org		41.877384	-87.748979
+107	Austin-Irving Library	6100 W. Irving Park Road		Chicago	IL	60634	3127446222	http://www.chipublib.org/branch/details/library/austin-irving/		41.953279	-87.779458
+108	Avalon Library	8148 S. Stony Island Avenue		Chicago	IL	60617	3127475234	http://www.chipublib.org/branch/details/library/avalon/		41.746338	-87.58621
+109	Back of the Yards Neighborhood Council CTC	1751 W 47th Street, 2nd Floor		Chicago	IL	60609	7735234416	http://www.bync.org		41.808302	-87.669383
+110	Beverly Library	2121 W. 95th Street		Chicago	IL	60643	3127479673	http://www.chipublib.org/branch/details/library/beverly/		41.7209725	-87.6756459
+111	Bezazian Library	1226 W. Ainslie Street		Chicago	IL	60640	3127440019	http://www.chipublib.org/branch/details/library/bezazian/		41.9714518	-87.6609184
+112	Blackstone Library	4904 S. Lake Park Avenue		Chicago	IL	60615	3127470511	http://www.chipublib.org/branch/details/library/blackstone/		41.8058315	-87.5903089
+113	Erie Neighborhood House	1347 w Erie		Chicago	IL	60622	3125635800	http://www.eriehouse.org/page/contact-us/erie-community-center		41.89317	-87.6610539
+114	Brainerd Library	1350 W. 89th Street		Chicago	IL	60620	3127476291	http://www.chipublib.org/branch/details/library/brainerd/		41.7323361	-87.6576514
+115	Brighton Park Library	4314 S. Archer Avenue		Chicago	IL	60632	3127470666	http://www.chipublib.org/branch/details/library/brighton-park/		41.8150354	-87.7027338
+116	Bucktown-Wicker Park Library	1701 N. Milwaukee Avenue		Chicago	IL	60647	3127446022	http://www.chipublib.org/branch/details/library/bucktown-wicker-park/		41.9123993	-87.6803408
+117	Budlong Woods Library	5630 N. Lincoln Avenue		Chicago	IL	60659	3127429590	http://www.chipublib.org/branch/details/library/budlong-woods/		41.9837114	-87.6961305
+118	Canaryville Library	642 W. 43rd Street		Chicago	IL	60609	3127470644	http://www.chipublib.org/branch/details/library/canaryville/		41.8164872	-87.64262
+119	CAP- DCFS Transitional Jobs Program	7723 South Kedzie, Suite D&E		Chicago	IL	60653	(773) 863-5089	http://www.youthincare.illinois.gov/Money_Job/CommunityAssistancePrograms.htm		41.820267	-87.603826
+120	Career Pathways Resource Center	950 East 61st Street		Chicago	IL	60637	7737520687	http://www.thecaraprogram.org		41.7840956	-87.6026209
+121	Carlos Fuentes Charter School	2845 W Barry		Chicago	IL	60618	(773) 279-9826	http://unocharterschools.org/uscn_campuses.aspx		41.937491	-87.699636
+122	Casa Central	1335 N. California		Chicago	IL	60622	7737828859	http://www.casacentral.org/programs/Community-Technology-Center		41.9058599	-87.696534
+123	Centro Romero	6216 N. Clark St		Chicago	IL	60660	7735085300	http://www.centroromero.org		41.9949726	-87.6704061
+124	CFL/Workers Assistance Committee	130 E. Randolph, Suite 2600		Chicago	IL	60601	3125659431	http://www.cflwac.org/contact/offices		41.8848378	-87.623105
+125	Charles Hayes Center	4859 S. Wabash Ave		Chicago	IL	60615	(312) 786-6986	http://www.charleshayescenter.org/		41.8056646	-87.6242497
+126	Chicago Bee Library	3647 S. State Street		Chicago	IL	60609	3127476872	http://www.chipublib.org/branch/details/library/chicago-bee/		41.828158	-87.6260439
+127	Chicago Federation of Labor	130 W. Randolph		Chicago	IL	60601	3125659431	http://www.chicagolabor.org/		41.8844834	-87.6319129
+128	Chicago Lawn Library	6120 S. Kedzie Avenue		Chicago	IL	60629	3127470639	http://www.chipublib.org/branch/details/library/chicago-lawn/		41.781961	-87.703538
+129	Chinatown Library	2353 S. Wentworth Avenue		Chicago	IL	60616	3127478013	http://www.chipublib.org/branch/details/library/chinatown/		41.8499993	-87.6319417
+130	Chinese American Service League	2141 S. Tan Court		Chicago	IL	60616	3127910418	http://www.caslservice.org		41.854485	-87.6358044
+131	Chinese Mutual Aid Association	1016 W Argyle St		Chicago	IL	60640	7737842900	http://www.chinesemutualaid.org		41.9733066	-87.6557077
+132	Clearing Library	6423 W. 63rd Place		Chicago	IL	60638	3127475657	http://www.chipublib.org/branch/details/library/clearing/		41.7767661	-87.7821114
+133	Coleman Library	731 E. 63rd Street		Chicago	IL	60637	3127477760	http://www.chipublib.org/branch/details/library/bessie-coleman/		41.7803638	-87.6071767
+134	Community Job Training and Education Center	2021 W. Fulton Ave.		Chicago	IL	60622	(312) 563-9028	http://www.gwtp.org		41.886512	-87.678216
+135	Community TV Network - Youth Media Ctr.	2418 West Bloomingdale		Chicago	IL	60647	7732788500	http://www.ctvnetwork.org		41.9146382	-87.6881374
+136	Continental Plaza CTC	1330 W. 76th Street		Chicago	IL	60620	7734873300	http://www.hhdc.org		41.7560068	-87.6578387
+137	CRDDC Technology Center	25 N. Cicero Avenue		Chicago	IL	60644	7732616098	http://www.CRDDC.net		41.8815536	-87.745178
+138	Richard J. Daley Library	3400 S. Halsted Street		Chicago	IL	60608	3127478990	http://www.chipublib.org/branch/details/library/daley/		41.8325552	-87.6464745
+139	Dawson Technical Institute	3901 S. State Street		Chicago	IL	60609	773-602-5363	http://apps.ccc.edu/dawson/index.html		41.8235415	-87.6262275
+140	Dearborn Homes	2910 S Dearborn		Chicago	IL	60616	3129137132	http://www.terau.com		41.8420674	-87.6280554
+141	Douglass Library	3353 W. 13th Street		Chicago	IL	60623	3127473725	http://www.chipublib.org/branch/details/library/douglass/		41.8645095	-87.7096584
+142	Dunning Library	7455 W. Cornelia Avenue		Chicago	IL	60634	3127430480	http://www.chipublib.org/branch/details/library/dunning/		41.9431859	-87.8138536
+143	Willett Employment and Training Center, Easter Seals Metropolitan Chicago	120 W. Madison, Oak Park		Chicago	IL	60302	7085248700	http://chicago.easterseals.com/site/PageServer?pagename=ILCH_job_training		41.879925	-87.804292
+144	Easter Seals Metropolitan Chicago Center	2615 W. Division		Chicago	IL	60622	773-904-1010	http://chicago.easterseals.com/site/PageServer?pagename=ILCH_homepage		41.9028318	-87.6925692
+145	Edgebrook Library	5331 W. Devon Avenue		Chicago	IL	60646	3127474300	http://www.chipublib.org/branch/details/library/edgebrook/		41.9969867	-87.7622019
+146	Edgewater Library	1210 W. Elmdale Avenue		Chicago	IL	60660	3127440019	http://www.chipublib.org/branch/details/library/edgewater/		41.9909171	-87.6607731
+147	Englewood Community Service Center	1140 W. 79th Street		Chicago	IL	60621	3127470200			41.7506407	-87.6530146
+148	Erie House- Little Village Technology Center	4225 W. 25th St.		Chicago	IlL	60623	7735427617	http://www.eriehouse.org		41.8459775	-87.7304195
+149	Erie Neighborhood House	1347 W. Erie St.		Chicago	IL	60642	3126663430	http://www.eriehouse.org		41.89317	-87.6610539
+150	Fulfilling Our Responsibility Unto Mandkind (FORUM)	200 E 75th Street		Chicago	IL	60619	(773) 994-9200	http://www.forumdigital.org/		41.758544	-87.6191149
+151	Gage Park Library	2807 W. 55th Street		Chicago	IL	60632	3127470032	http://www.chipublib.org/branch/details/library/gage-park/		41.793424	-87.694126
+152	Garfield Ridge Library	6348 S. Archer Avenue		Chicago	IL	60638	3127476094	http://www.chipublib.org/branch/details/library/garfield-ridge/		41.7930119	-87.780138
+153	Goodwill Industries Job Training Center	6054 South Western		Chicago	IL	60636	7736275770	http://Www.Goodwillchicago.com		41.7831076	-87.6839492
+154	Goodwill Industries Job Training Center	2435 W. 63rd Street		Chicago	IL	60629	(312) 212-1290	http://www.goodwillchicago.com/page.asp?dbID=78		41.7791448	-87.6851616
+155	Goodwill Industries Job Training Center	819 S. Wabash		Chicago	IL	60605	(312) 212-1290	http://www.goodwillchicago.com/page.asp?dbID=78		41.871285	-87.62541
+156	Greater Auburn Gresham Development Corporation	1159 W. 79th Street		Chicago	IL	60620	7734833696	http://www.auburngreshamportal.org		41.7504189	-87.6535498
+157	Greater Grand Crossing Library	1000 E. 73rd Street		Chicago	IL	60619	3127451608	http://www.chipublib.org/branch/details/library/greater-grand-crossing/		41.7622942	-87.6004879
+158	Greater Southwest Development Corporation	2601 W. 63rd Street		Chicago	IL	60629	7734361000x106	http://www.chicagolawnportal.org		41.778888	-87.688728
+159	Second Sense Beyond Vision Loss Technology Center (Access limited to people with vision loss)	65 East Wacker Place		Chicago	IL	60601	3122368569	http://www.second-sense.org/programs_ctc_main.asp		41.8866252	-87.6255869
+160	Hall Library	4801 S. Michigan Avenue		Chicago	IL	60615	3127472541	http://www.chipublib.org/branch/details/library/hall/		41.8074458	-87.6227727
+161	Harold Washington College	30 E. Lake Street		Chicago	IL	60601	3125533208	http://www.ccc.edu/colleges/washington/menu/Pages/Computer-Labs.aspx		41.886074	-87.6266629
+162	Mercy Housing - Harold Washington Apartments	4946 N. Sheridan Rd.		Chicago	IL	60640	8722131120	http://www.mercyhousing.org		41.9730854	-87.6549438
+163	Harold Washington Library-HWLC	400 S. State Street		Chicago	IL	60605	3127474300	http://www.chipublib.org/branch/details/library/harold-washington/		41.8762169	-87.6282726
+164	Harry S. Truman College	1145 W. Wilson		Chicago	IL	60640	7739074000	http://www.ccc.edu/colleges/truman/menu/Pages/Computer-Labs.aspx		41.9650863	-87.6590226
+165	Hegewisch Library	3048 E. 130th Street		Chicago	IL	60633	3127470046	http://www.chipublib.org/branch/details/library/hegewisch/		41.659276	-87.5488831
+166	Humboldt Park Library	1605 N. Troy Street		Chicago	IL	60647	3127442244	http://www.chipublib.olrg/branch/details/library/humboldt/		41.9104786	-87.7052918
+167	Humboldt Park Vocational Education Center	1645 N. California Ave.		Chicago	IilL	60647	7734898989	http://www.ccc.edu/colleges/wright/departments/pages/humboldt-park-vocational-education-center.aspx		41.9117075	-87.696675
+168	IMAN (Inner-City Muslim Action Network)	2744 W. 63rd Street		Chicago	IL	60629	(773) 434-4626	http://www.imancentral.org		41.7792569	-87.6927863
+169	Independence Library	3548 W. Irving Park Road		Chicago	IL	60618	3127440900	http://www.chipublib.org/branch/details/library/independence/		41.9539814	-87.7174661
+170	Industrial Council of Nearwest Chicago (ICNC) Community Technology Center	2010 W. Fulton St. Suite 280		Chicago	IL	60612	(312) 421-3941	http://www.industrialcouncil.com/		41.887057	-87.678011
+171	Inspiration Corporation	4554 N. Broadway, Suite 207		Chicago	IL	60613	7738780981	http://www.inspirationcorp.org/		41.9648454	-87.6573372
+172	Instituto del Progreso Latino (Back of the Yards)	4600 S Wood Street		Chicago	IL	60608	7738900055	http://www.idpl.org		41.8102159	-87.6702229
+173	Instituto del Progreso Latino (Lower West Side)	2520 s. western		Chicago	IL	60608	7738900055	http://www.idpl.org		41.8457168	-87.6855535
+174	Instituto del Progreso Latino at St. Michael's Education Center	2315 W. 24th Place		Chicago	IL	60608	(773) 890-0055	http://www.idpl.org		41.847261	-87.683703
+175	Refugee One	4753 N. Broadway		Chicago	IL	60640	7739895647	http://www.refugeeone.org/		41.968817	-87.659241
+176	Jane Addams Hull House Association	5797 North Lincoln Avenue		Chicago	IL	60659	(773) 506-0293	http://www.hullhouse.org		41.9869243	-87.7012123
+177	Jefferson Park Library	5363 W. Lawrence Avenue		Chicago	IL	60630	3127441998	http://www.chipublib.org/branch/details/library/jefferson-park/		41.9681586	-87.7611999
+178	Jeffery Manor Library	2401 E. 100th Street		Chicago	IL	60617	3127476479	http://www.chipublib.org/branch/details/library/jeffery-manor/		41.7134852	-87.5657795
+179	Jewish Vocational Service CTC	6526 N. California		Chicago	IL	60645	7737435638	http://www.jvschicago.org		42.0002408	-87.6997273
+180	Kelly Library	6151 S. Normal Boulevard		Chicago	IL	60621	3127478418	http://www.chipublib.org/branch/details/library/kelly/		41.7823511	-87.6375226
+181	Kennedy-King College	6301 S. Halsted Street		Chicago	IL	60621	7736025363	http://www.ccc.edu/colleges/kennedy/menu/Pages/Computer-Labs.aspx		41.7801327	-87.6445241
+182	King Library	3436 S. King Drive		Chicago	IL	60616	3127477543	http://www.chipublib.org/branch/details/library/king/		41.8323135	-87.6173487
+183	Knowledge Hook Up Community Technology Center	3457 East 106th Street		Chicago	IL	60617	7732219111	http://www.knowledgehookup.org		41.7024789	-87.5391099
+184	Korean American Community Services	4300 N. California Ave		Chicago	IL	60618	7735835501	http://www.kacschicago.org		41.9595429	-87.698748
+185	La Casa Norte	3533 W. North Ave.		Chicago	IL	60647	7732764900	http://www.lacasanorte.org		41.9096915	-87.7157608
+186	Center of Higher Development-Lake Grove	3515 South Cottage Grove		Chicago	IL	60653	8883175480	http://centerofhigherdevelopment.org		41.8312243	-87.6106167
+187	Lawndale Christian Development Corporation	3843 W. Ogden Ave		Chicago	IL	60623	7737628889	http://www.lcdc.net		41.851878	-87.72142
+188	Lawndale Gardens	2527 S. California		Chicago	IL	60608	3129137132	http://www.terau.com		41.8457052	-87.6946598
+189	North Branch Works Community Technology Center (Formerly LEED Council)	1866 N. Marcey Street		Chicago	IL	60614	7739295552x230	http://www.northbranchworks.org		41.915912	-87.657874
+190	Legler Library	115 S. Pulaski Road		Chicago	IL	60624	3127467730	http://www.chipublib.org/branch/details/library/legler/		41.8791862	-87.7255892
+191	Lincoln Belmont Library	1659 W. Melrose Street		Chicago	IL	60657	3127440166	http://www.chipublib.org/branch/details/library/lincoln-belmont/		41.9405646	-87.6708138
+192	Lincoln Park Library	1150 W. Fullerton Avenue		Chicago	IL	60614	3127441926	http://www.chipublib.org/branch/details/library/lincoln-park/		41.9254616	-87.6580836
+193	Little Village Library	2311 South Kedzie Avenue		Chicago	IL	60623	3127451862	http://www.chipublib.org/branch/details/library/little-village/		41.8495518	-87.7049711
+194	Logan Square Library	3030 W. Fullerton Avenue		Chicago	IL	60647	3127445295	http://www.chipublib.org/branch/details/library/logan-square/		41.925073	-87.7034385
+195	Lowden Homes	200 W. 95th Street		Chicago	IL	60620	3129137132	http://www.terau.com		41.7201045	-87.737158
+196	Lozano Library	1805 S. Loomis Street		Chicago	ILIL	60608	3127464329	http://www.chipublib.org/branch/details/library/lozano/		41.8576229	-87.660933
+197	Lumity Technology Training Center	55 W Van Buren St Suite 420		Chicago	il	60605	3123724872	http://www.lumity.org		41.876772	-87.629523
+198	Malcolm X College	1900 W. Van Buren		Chicago	IL	60612	312-850-7000	http://www.ccc.edu/colleges/malcolm-x/menu/Pages/Computer-Labs.aspx		41.8762451	-87.6742175
+199	Manning Library	6 S. Hoyne Avenue		Chicago	IL	60612	(312) 746-6800	http://www.chipublib.org/branch/details/library/mabel-manning/		41.881136	-87.6793361
+200	Mather's More Than a Cafe (83rd Street)	33 E. 83rd Street		Chicago	IL	60619	(773) 488-2801	http://www.matherlifeways.org/iyc_wherearematherscafes.asp		41.7435859	-87.6230591
+201	Mather's-More Than a Café (Higgins)	7134 W. Higgins		Chicago	IL	60656	7737744804	http://www.matherlifeways.org/iyc_wherearematherscafes.asp		41.98113	-87.805999
+202	Mathers More Than a Cafe (Central)	3235 N. Central Ave		Chicago	IL	60634	7732053300	http://www.matherlifeways.org/iyc_wherearematherscafes.asp		41.9395382	-87.7665165
+203	Mayfair Library	4400 W. Lawrence Avenue		Chicago	IL	60630	3127441254	http://www.chipublib.org/branch/details/library/mayfair/		41.9681483	-87.7378923
+204	McKinley Park Library	1915 W. 35th Street		Chicago	IL	60609	3127476082	http://www.chipublib.org/branch/details/library/mckinley-park/		41.830142	-87.673438
+205	Merlo Library	644 W. Belmont Avenue		Chicago	IL	60657	3127441139	http://www.chipublib.org/branch/details/library/j-merlo-branch/		41.940347	-87.646062
+206	MLK Boys & Girls Club Youth Career Development Center	2950 W. Washington Blvd.		Chicago	IL	60612	7736385464	http://king.bgcc.org/		41.883256	-87.700987
+207	Mount Greenwood Library	11010 S. Kedzie Avenue		Chicago	IL	60655	3127472805	http://www.chipublib.org/branch/details/library/mt-greenwood/		41.692987	-87.701221
+208	National Able Library/ Pilsen Workforce Center	1700 W. 18th Street		Chicago	IL	60608	3127335380	http://www.nationalable.org/Our-Services/workforcedev.html		41.8578567	-87.6690819
+209	Near North Library	310 W. Division Street		Chicago	IL	60610	3127440991	http://www.chipublib.org/branch/details/library/near-north/		41.9039929	-87.6366889
+210	North Austin Library	5724 W. North Avenue		Chicago	IL	60639	3127464233	http://www.chipublib.org/branch/details/library/north-austin/		41.9094902	-87.7686666
+211	North Pulaski Library	4300 W. North Avenue		Chicago	IL	60639	3127449573	http://www.chipublib.org/branch/details/library/north-pulaski/		41.9101167	-87.7340379
+212	Northtown Library	6435 N. California Avenue		Chicago	IL	60645	3127442292	http://www.chipublib.org/branch/details/library/northtown/		41.9988295	-87.6994789
+213	OAI, Inc. Community Technology Center	180 N Wabash Ave. Suite 400		Chicago	IL	60601	3125283500	http://www.oaiinc.org/CTC.html		41.8856276	-87.6265773
+214	Officer Donald J. Marquez School	2916 W. 47th St.		Chicago	IL	60632	(773) 321-2200	http://www.cps.edu/Schools/Pages/school.aspx?id=400089		41.808484	-87.698055
+215	Onward Neighborhood House	5423 W. Diversey Avenue		Chicago	IL	60639	7736223215	http://www.onwardhouse.org/		41.931073	-87.762323
+216	Oriole Park Library	7454 W. Balmoral Avenue		Chicago	IL	60656	3127441965	http://www.chipublib.org/branch/details/library/oriole-park/		41.9780232	-87.8132945
+217	Phalanx Family Services	1201 W. 115th St.		Chicago	IL	60643	7732911086	http://www.phalanxgrpservices.org/		41.684479	-87.65216
+218	Poder Learning Center	1637 S. Allport St.		Chicago	IL	60608	3122262002	http://www.poderlc.org/		41.8586643	-87.6575431
+219	Polish American Association	6276 W. Archer		Chicago	IL	60638	(773) 767-7773	http://www.polish.org/		41.7934136	-87.7777673
+220	Portage-Cragin Library	5108 W. Belmont Avenue		Chicago	IL	60641	3127440152	http://www.chipublib.org/branch/details/library/portage-cragin/		41.9388245	-87.7549204
+221	Pui Tak Center	2216 S. Wentworth Avenue		Chicago	IL	60616	3123281188	http://www.puitak.org		41.8523645	-87.6320533
+222	Pullman Library	11001 S. Indiana Avenue		Chicago	IL	60628	3127472033	http://www.chipublib.org/branch/details/library/pullman/		41.6944309	-87.6182666
+223	Pyramid Partnership Inc.	3057 N. Lincoln Avenue		Chicago	IL	60657	7739759898	http://www.pyramid-pci.com/id27.html		41.93753	-87.665162
+224	Resurrection Lutheran Church	9349 S. Wentworth Avenue		Chicago	IL	60620	(773) 928-6312	http://resurrectionlutheranschool.com/		41.723749	-87.628359
+225	Richard J. Daley College	7500 S. Pulaski Ave.		Chicago	IL	60652	7738387500	http://www.ccc.edu/colleges/daley/menu/Pages/Computer-Labs.aspx		41.7561784	-87.7238989
+226	Roden Library	6083 N. Northwest Highway		Chicago	IL	60631	3127441478	http://www.chipublib.org/branch/details/library/roden/		41.9919012	-87.7982427
+227	Rogers Park Library	6907 N. Clark Street		Chicago	IL	60626	3127440156	http://www.chipublib.org/branch/details/library/rogers-park/		42.0067662	-87.6733461
+228	Roosevelt Library	1101 W. Taylor Street		Chicago	IL	60607	3127465656	http://www.chipublib.org/branch/details/library/roosevelt/		41.869221	-87.6544386
+229	Roseland Senior Satellite Center	10426 S. Michigan Ave.		Chicago	IL	60628	773-468-1901	https://www.mercyhousing.org/Page.aspx?pid=334		41.704555	-87.621149
+230	Rufino Tamayo School (housed at St. Simon the Apostle Parish)	5157 S. California		Chicago	IL	60632	(312) 432-6301	http://unocharterschools.org/uscn_campuses.aspx		41.7993986	-87.6939437
+231	Safer Foundation	571 W. Jackson Blvd		Chicago	IL	60661	3129222200	http://www.saferfoundation.org/viewpage.asp?id=4		41.877837	-87.64222
+232	Scottsdale Library	4101 W. 79th Street		Chicago	IL	60652	3127470193	http://www.chipublib.org/branch/details/library/scottsdale/		41.7493885	-87.724307
+233	Sherman Park Library	5440 S. Racine Avenue		Chicago	IL	60609	3127470477	http://www.chipublib.org/branch/details/library/sherman-park/		41.7942194	-87.6548825
+234	Sinai Community Institute	2653 W. Ogden Ave.		Chicago	IL	60608	7732575213	http://www.sinai.org/who-we-are/sci.asp		41.8621374	-87.6928013
+235	South Chicago Library	9055 S. Houston Avenue		Chicago	IL	60612	3127478065	http://www.chipublib.org/branch/details/library/south-chicago/		41.7305075	-87.549862
+236	South Chicago Community Service Center	8650 S. Commercial		Chicago	IL	60617	3127470500	http://www.cityofchicago.org		41.7378296	-87.5514627
+237	South Chicago Learning Center	3055 E. 92nd Street		Chicago	IL	60617	7732916770	http://www.ccc.edu/colleges/olive-harvey/departments/pages/south-chicago-learning-center.aspx		41.727986	-87.549122
+238	Mercy Housing- South Loop	1521 S. Wabash Ave.		Chicago	IL	60605	3122393251	http://www.mercyhousing.org		41.8612535	-87.6255589
+239	GSDC Southwest REACH Center	6155 S. Pulaski Rd.		Chicago	IL	60629	7737356727	http://greatersouthwest.org/what-we-do/programs-for-residents/		41.780784	-87.722443
+240	Southwest Workforce Center	7500 S. Pulaski, Bldg 100		Chicago	IL	60652	7738847000	http://www.cityofchicago.org/city/en/depts/fss/supp_info/chicago_workforcecenters-servicesforjobseekers.html		41.7561784	-87.7238989
+241	St. Agatha Family Empowerment	3143 W. Douglas Boulevard		Chicago	IL	60623	7735221354	http://www.stagathafamilyempowerment.org/#!programs/cee5		41.8625227	-87.7030765
+242	Street-Level Youth Media Center	1637 N. Ashland Ave.		Chicago	IL	60622	7738625331	http://www.street-level.org		41.911744	-87.667323
+243	Sulzer Regional Library	4455 N. Lincoln Avenue		Chicago	IL	60625	3127447616	http://www.chipublib.org/branch/details/library/sulzer-regional/		41.9625911	-87.6842925
+244	Sunshine Gospel Ministries	500 East 61st Street		Chicago	IL	60637	(773) 493-0656 x. 1010	http://www.sunshinegospel.org		41.7841018	-87.6129055
+245	The Cara Program (West Loop Campus)	703 West Monroe		Chicago	IL	60661	3127983300	http://www.thecaraprogram.org		41.8804357	-87.6447758
+246	Thurgood Marshall Library	7506 S. Racine Avenue		Chicago	IL	60620	3127475927	http://www.chipublib.org/branch/details/library/thurgood-marshall/		41.7575973	-87.6539338
+247	Toman Library	2708 S. Pulaski Road		Chicago	IL	60623	3127451660	http://www.chipublib.org/branch/details/library/toman/		41.842065	-87.724832
+248	Uptown Library	929 W. Buena Avenue		Chicago	IL	60613	3127448400	http://www.chipublib.org/branch/details/library/uptown/		41.9583386	-87.6541599
+249	Veterans Memorial High School	4248 W 47th St		Chicago	IL	60632	(312) 432-6301	http://unocharterschools.org/uscn_campuses.aspx		41.808059	-87.731004
+250	Vodak-East Side Library	3710 E. 106th Street		Chicago	IL	60617	3127475500	http://www.chipublib.org/branch/details/library/vodak-east-side/		41.703003	-87.533518
+251	Walker Library	11071 S. Hoyne Avenue		Chicago	IL	60643	3127471920	http://www.chipublib.org/branch/details/library/walker/		41.6920669	-87.6740839
+252	Wentworth Gardens	3759 S. Wentworth		Chicago	IL	60609	3129137132	http://www.terau.com		41.8258243	-87.6313471
+253	West Belmont Library	3104 N. Narragansett Avenue		Chicago	IL	60634	3127465142	http://www.chipublib.org/branch/details/library/west-belmont/		41.9366209	-87.7858839
+254	West Chicago Avenue Library	4856 W. Chicago Avenue		Chicago	IL	60651	3127430260	http://www.chipublib.org/branch/details/library/west-chicago-avenue/		41.8949932	-87.7477015
+255	West Englewood Library	1745 W. 63rd Street		Chicago	IL	60636	3127473481	http://www.chipublib.org/branch/details/library/west-englewood/		41.779098	-87.6682019
+256	Richard M. Daley Library	733 N. Kedzie Avenue		Chicago	IL	60612	3127430555	http://www.chipublib.org/branch/details/library/daley-w-humboldt/		41.894691	-87.7061905
+257	West Humboldt Park Community Development Council Community Technology Center	3620 W. Chicago Ave		Chicago	IlIL	60651	7733420036	http://www.whpdevelopmentcouncil.net/index.html		41.895736	-87.717197
+258	West Lawn Library	4020 W. 63rd Street		Chicago	IL	60629	3127477381	http://www.chipublib.org/branch/details/library/west-lawn/		41.7786534	-87.7238269
+259	West Pullman Library	830 W. 119th Street		Chicago	IL	60643	3127471425	http://www.chipublib.org/branch/details/library/west-pullman/		41.6777914	-87.6431997
+260	Westside Learning Center	4624 W. Madison Street		Chicago	IL	60644	3128507420	http://www.ccc.edu/colleges/malcolm-x/departments/pages/westside-learning-center.aspx		41.880568	-87.7403821
+261	Westside Youth Technical Entrepreneur Center	4211-13 West Madison		Chicago	IL	60624	7735333500	http://www.WYTEC4213.org		41.880336	-87.731066
+262	Westside Health Authority - Business and Human Resource Center	4800 West Chicago Avenue		Chicago	IL	60651	7737860226x2100	http://www.healthauthority.org		41.895251	-87.746162
+263	Whitney M. Young, Jr. Library	7901 S. King Drive		Chicago	IL	60619	(312) 747-0039	http://www.chipublib.org/branch/details/library/whitney-young/		41.7510929	-87.6149593
+264	Wilbur Wright College	4300 N. Narragansett		Chicago	IL	60634	7734818775	http://www.ccc.edu/colleges/wright/menu/Pages/Computer-Labs.aspx		41.958826	-87.788787
+265	Woodson Regional Library	9525 S. Halsted Street		Chicago	IL	60628	3.12748E+19	http://www.chipublib.org/branch/details/library/woodson-regional/		41.7207984	-87.6429995
+266	Wrightwood-Ashburn Library	8530 S. Kedzie Avenue		Chicago	IL	60652	3127472696	http://www.chipublib.org/branch/details/library/wrightwood/		41.7375841	-87.7022748
+267	YWCA Parks Francis Community Technology Center	6600 S. Cottage Grove		Chicago	IL	60637	7734965620	http://www.ywcachicago.org		41.774736	-87.606204
+268	Garfield Workforce Center	10 S. Kedzie, Room 134		Chicago	IL	60624	(773) 722-3885 (Voice or (773) 722-6081(TTY)	http://www.cityofchicago.org/city/en/depts/fss/supp_info/chicago_workforcecenters-servicesforjobseekers.html		41.8808503	-87.7061056
+269	Polish American Association	3815 N. Cicero Ave		Chicago	IL	60641	7732821122	http://www.polish.org/		41.9503142	-87.7470834
+270	Instituto Del Progreso	2570 S. Blue Island		Chicago	IL	60608	7738900055x291	http://www.idpl.org		41.845649	-87.6841139
+271	Chicago Commons ETC	3441 W. Chicago Ave		Chicago	IL	60651	7738260739	http://www.chicagocommons.org/		41.895228	-87.713077
+272	Jane Addams Resource Corporation	4432 N. Ravenswood, Chicago, IL		Chicago	IL	60640	7737517106	http://jarcctc.wordpress.com/		41.9627731	-87.674689
+273	WHA-Community Tech Center	5417-5437 West Division Street		Chicago	IL	60651	7733781878x1228	http://www.healthauthority.org		41.901916	-87.762404
+274	Association House of Chicago	1116 N. Kedzie Ave		Chicago	IL	60651	7737727170x3104	http://www.associationhouse.org		41.9013272	-87.7068317
+275	Community Assistance Program - Roseland	11717 S. Halsted		Chicago	IL	60628	7735681782	http://www.capsinc.org/		41.681142	-87.641645
+276	Dr. David J. Lochman Cyber Center	3656 N. Halsted		Chicago	IL	60613	773-472-6469	http://www.centeronhalsted.org/		41.9488772	-87.6498011
+277	Mid-South Workforce Center	4314 S. Cottage Grove Ave.		Chicago	IL	60653	7735385627	http://www.cityofchicago.org/city/en/depts/fss/supp_info/chicago_workforcecenters-servicesforjobseekers.html		41.8162639	-87.607065
+278	North Area Community Service Center	4740 N. Sheridan		Chicago	IL	60640	7.73334E+19	http://www.cityofchicago.org/city/en/depts/fss/supp_info/chicago_workforcecenters-servicesforjobseekers.html		41.9681365	-87.654829
+279	Greater West Town Development Corporation	790 N. Milwaukee Ave.		Chicago	IL	60622	3124321300	http://www.gwtp.org/programs.html		41.895987	-87.6555939
+280	Catholic Bishop of Chicago/St. Sabina ERC	7909 S. Racine		Chicago	IL	60620	7737833760	http://N/A		41.7503287	-87.6537187
+281	Worknet Development Office CTC (Phone Disconnected)	2610 W. North Ave. 2nd Flr.		Chicago	IL	60647	7738621892	http://www.hhdc.org/opportunities/workforce.html		41.9103207	-87.6926311
+282	Olive-Harvey College	10001 S. Woodlawn Ave		Chicago	IL	60628	7732916200	http://www.ccc.edu/colleges/olive-harvey/menu/Pages/Computer-Labs.aspx		41.7141036	-87.5903737
+283	Howard Area Community Center	1623 W. Howard Ave.		Chicago	IL	60626	7732623515	http://www.howardarea.org/		42.0193531	-87.6718115
+284	West Town Library	1625 W. Chicago Avenue		Chicago	IL	60622	3127430450	http://www.chipublib.org/branch/details/library/west-town/		41.895745	-87.668496
+285	SER Central States Little Village Center	3948 W. 26th St., Suite 213		Chicago	IL	60623	7735429030	http://www.centralstatesser.org/SER/index.php?option=com_content&view=category&layout=blog&id=53&Itemid=66		41.844634	-87.723828
+286	National Latino Education Institute	2011 West Pershing Road		Chicago	IL	60609	7732470707x218	http://www.nlei.org/		41.8230779	-87.6754885
+287	Chatham Business Association, Small Business Development, Inc.	800 East 78th Street		Chicago	IL	60619	7739945006	http://www.cbatechworks.org		41.7531082	-87.6052442
+288	Prosser Career Academy	2148 North Long		Chicago	IL	60639	7735343241	http://www.prosseracademy.org		41.920236	-87.7609555
+289	Teamwork Englewood	815 West 63rd Street		Chicago	IL	60621	7734886600	http://www.teamworkenglewood.org		41.779397	-87.645529
+290	Little Black Pearl	1060 East 47th Street		Chicago	IIL	60653	7732851211	http://www.blackpearl.org		41.8096104	-87.5994991
+291	Center of Higher Development - B.J. Wright	1350 South Morgan		Chicago	IL	60608	8883125780			41.864058	-87.648208
+292	Center of Higher Development - Lake Vista Seniors	1440 South Indiana		Chicago	IL	60605	3129225729	http://Www.centerofhigherdevelopment.org		41.8628797	-87.6226729
+293	Center of Higher Development - O'Keeffe	2059 East 70th Street		Chicago	IL	60649	8883125780	http://www.cohd.com		41.7680281	-87.5744957
+294	Center of Higher Development - Senior Residence	2928 South Archer		Chicago	IL	60608	(888) 312-5780			41.8412923	-87.6590399
+295	New Mt. Sinai	310 North Laramie Ave.		Chicago	IL	60644	773.287.1161 / 773.682.2767			41.8854815	-87.7553462
+296	Center of Higher Development - Lake Grove	3515 South Cottage Grove		Chicago	IL	60616	8883125780			41.8312243	-87.6106167
+297	Community Outreach Volunteers NFP	400 W 76th Street		Chicago	IL	60620	(773) 483-2233	tlumu@communityoutreachvolunteers.org		41.7563478	-87.635009
+298	NEBC ( neighborhood empowerment for a better community )	4628 West Washington Blvd.		Chicago	IL	60644	7734177954			41.882258	-87.741359
+299	Night Ministry	4705 North Ravenswood Ave.		Chicago	IL	60640	7735066008			41.9672462	-87.674108
+300	Center of Higher Development - Englewood	6852 South Normal		Chicago	IL	60621	8883175480			41.7693978	-87.6372633
+301	South Central Community Services Inc.	8316. South Elllis		Chicago	IL	60619	(773) 483-0900 ext. 228	www.sccsinc.org		41.7435182	-87.6001448
+302	Mercy Housing Lakefront Englewood	901 W 63rd Street		Chicago	IL	60621	7739943199	http://Www.mercyhousinglakefront.com		41.779452	-87.647441
+303	Center of Higher Development - Uptown	927 W. Wilson		Chicago	IL	60640	8883125780			41.965072	-87.6535169
+304	CJG COMMUNICATIONS, INC.	9453 S. Ashland Ave., Suite 10		Chicago	IL	60620	7732398847			41.7232595	-87.6626443
+305	Far South Community Development Corporation (Opening soon)	9923 S. Halsted Street Suite D		Chicago	IL	60628	7.73941E+19	http://www.farsouthcdc.org		41.713539	-87.642583
+306	Breakthrough Urban Ministries	3330W. Carroll Ave.		Chicago	IL	60624	7737220179	http://www.breakthrough.org		41.8874852	-87.709805
+307	Henry Horner/Major Adams	123 N. Hoyne		Chicago	IL	60612	3129137132	http://www.terau.com		41.8835551	-87.6791072
+308	Lake Parc Place	3983 S Lake Park		Chicago	IL	60653	3129137132	http://www.terau.com		41.822958	-87.601821
+309	Komed Holman Health Center	4259 South Berkeley Avenue		Chicago	IL	60653	7732687600	http://www.nearnorthhealth.org/sites/khhc.html		41.8170701	-87.6005152
+310	Erie Humboldt Park Health Center	2750 West North Avenue		Chicago	IL	60647	3126663494	http://www.eriefamilyhealth.org/locations/erie-humboldt-park-health-center		41.910547	-87.696534
+311	Water Works Library	163 E. Pearson Street		Chicago	IL	60611	3127428811	http://www.chipublib.org/branch/details/library/water-works/		41.897207	-87.623225
+313	Featherfist	2255 E 75th Street		Chicago	IL	60649	7737217088	http://www.featherfist.org		41.7587029	-87.569185
+314	Northwestern University Settlement	1424 n cleaver		Chicago	IIL	60642	7732787471	http://www.nush.org/		41.9078093	-87.6645798
+315	Indo-American Center	6328 N California Ave.		Chicago	IL	60659	7739734444	http://www.indoamerican.org/		41.996635	-87.699945
+316	The Renaissance Collaborative	3763 S Wabash Ave		Chicago	IL	60653	7739249270x33	http://www.trcwabash.org/		41.8256226	-87.6246491
+317	The Renaissance Collaborative	3763 S Wabash Ave		Chicago	IL	60653	7739249270	http://www.trcwabash.org/		41.8256232	-87.6246493
+318	The Renaissance Collaborative	346 E. 53rd St.		Chicago	IL	60615	7739249270	http://www.trcwabash.org/		41.798666	-87.617222
+319	The Renaissance Collaborative	3800 S. Michigan Ave.		Chicago	IL	60653	7739249270	http://www.trcwabash.org/		41.8253438	-87.623127
+320	Spanish Coalition for Housing	1922 N. Pulaski		Chicago	IL	60639	7733427575	http://www.sc4housing.org/		41.916117	-87.726868
+321	Spanish Coalition for Housing (Pilsen)	1915 S. Blue Island		Chicago	IL	60608	3128502660	http://www.sc4housing.org		41.855516	-87.662698
+322	Spanish Coalition for Housing (South East Side)	9010 S. Commercial Ave.		Chicago	IL	60617	7739337575	http://www.sc4housing.org		41.731456	-87.55165
+323	ARK of St. Sabina	7800 S Racine		Chicago	IL	60620	7734834333	http://thearkofstsabina.org/		41.7522957	-87.6538101
+324	Kelly Hall YMCA	824 N Hamlin Ave		Chicago	Il	60651	7739040198	http://kellyhallymca.org		41.896088	-87.7215669
