@@ -1,11 +1,13 @@
 class OrganizationsController < ActionController::Base
-  respond_to :json
+  respond_to :json, :html
 
   def index
-    respond_with Organization.all.to_json
+    @organizations = Organization.all
+    respond_with @organizations
   end
 
   def show
-    respond_with Organization.find(params[:id]).to_json
+    @organization = Organization.find(params[:id])
+    respond_with @organization
   end
 end

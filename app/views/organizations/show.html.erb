@@ -1,0 +1,26 @@
+<h1><%=@organization.name%></h1>
+
+
+<div class='programs'>
+  <h2>Programs</h2>
+  <%@organization.programs.each do |program| %>
+    <li> <%=link_to program.name, program%> </li>
+  <%end%>
+</div>
+
+
+<div class='address'>
+    <p> <%=@organization.address%>
+      <%=@organization.address2%><br/>
+      <%=@organization.city%><br/>
+      <%=@organization.state%><br/>
+      <%=@organization.zip%><br/>
+    </p>
+    <p> Phone no : <%=@organization.phone_no%></p>
+    <p> email: <%=@organization.email%> </p>
+</div>
+
+
+<div class='map'>
+
+</div>

@@ -2,10 +2,12 @@ class ProgramsController < ActionController::Base
   respond_to :json
 
   def index
-    respond_with Program.all.to_json
+    @programs = Program.all
+    respond_with @programs
   end
 
   def show
-    respond_with Program.find(params[:id]).to_json
+    @program = Program.find(params[:id])
+    respond_with @program
   end
 end
