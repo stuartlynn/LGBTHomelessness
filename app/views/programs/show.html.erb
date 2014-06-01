@@ -4,6 +4,23 @@
   <h1> <%= @program.name %></h1>
 <%end%>
 
+<div class="span5">
+  <% if @program.description != "" %>
+    <h2>Program Description:</h2>
+    <%= @program.description %>
+  <%end%>
+
+  <% if @program.access_to_services != "" %>
+    <h2>Access to Services:</h2>
+    <%= @program.access_to_services %>
+  <%end%>
+
+  <% if @program.program_timing != "" %>
+    <h2>Program Timing:</h2>
+    <%= @program.program_timing %>
+  <%end%>
+</div>
+
 <div class="span7">
   <%= map(:center => {
         :latlng => [@program.organization.latitude, @program.organization.longitude],
@@ -15,4 +32,35 @@
       }],
       :max_zoom => 16
   ) %>
+
+  <% if @program.services != "" %>
+    <h3>Services Offered:
+    <%= @program.services %> </h3>
+  <%end%>
+
+  <% if @program.health_status_req != "" or @program.gender_req != "" or @program.sexual_orientation_req != "" %>
+    <h3>Eligibility Requirements:
+        <%= @program.health_status_req %> 
+        <%= @program.gender_req %>  
+        <%= @program.sexual_orientation_req %>
+    </h3>
+  <%end%>
+
+  <% if @program.min_age != nil %>
+    <h3>Minimum Age Served:
+    <%= @program.min_age %> </h3>
+  <%end%>
+
+  <% if @program.max_age != nil %>
+    <h3>Maximum Age Served:
+    <%= @program.max_age %> </h3>
+  <%end%>
+
+  <% if @program.language_req == "Y" %>
+    <h3>Spanish Speaking Program</h3>
+  <%end%>
 </div>
+
+
+
+
