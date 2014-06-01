@@ -23,7 +23,9 @@ $(document).ready(function(){
     map.on('locationfound', function(e){
       var radius = e.accuracy / 2;
 
+
       href =$(".directions").first().attr("href")
+
       href = href.replace("ll", "daddr")
       href+= "&saddr="+e.latlng.lat+","+e.latlng.lng
       $(".directions").attr("href", href)
@@ -57,6 +59,6 @@ $(document).ready(function(){
       })
 
     });
-    map.locate({setView: true, maxZoom: 16});
+    map.locate({setView: true, maxZoom: 10});
   }
 })

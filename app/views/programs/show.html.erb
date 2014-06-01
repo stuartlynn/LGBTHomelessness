@@ -8,7 +8,7 @@
   <div class="span7">
     <%= map(:center => {
           :latlng => [@program.organization.latitude, @program.organization.longitude],
-          :zoom => 12,
+          :zoom => 10,
         },
         :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
         :markers => [{

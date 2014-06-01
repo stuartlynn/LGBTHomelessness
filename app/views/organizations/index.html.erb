@@ -5,7 +5,7 @@
        first_valid  = @organizations.select{|o| o.latitude}.first
        map(:center => {
           :latlng => [first_valid.latitude, first_valid.longitude],
-          :zoom => 12,
+          :zoom => 10,
         },
         :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
         :markers => @organizations.select{|o| o.latitude and o.longitude }.collect{|o| {:latlng => [o.latitude, o.longitude]}},
