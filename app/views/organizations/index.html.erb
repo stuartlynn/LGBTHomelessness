@@ -18,6 +18,14 @@
 
       <ul class='list-group results'>
         <% @organizations.each do |organization| %>
+          <li class="friendliness">
+              <% if @program.friendliness_rating == "LGBT Focused" %>
+              <%= image_tag("lgbt_focused.png", :alt => "LGBT Focused", :title => "LGBT Focused") %>
+            <%end%>
+            <% if @program.friendliness_rating == "LGBT Friendly" %>
+              <%= image_tag("lgbt_friendly.png", :alt => "LGBT Friendly", :title => "LGBT Friendly") %>
+            <%end%>
+        </li>
           <li class='list-group-item place' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' ><%= link_to organization.name, organization %> <span class="badge"><%=organization.programs.count%></span></li>
         <%end%>
       </ul>
