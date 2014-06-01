@@ -21,6 +21,13 @@
 
 
   <div class="main col-lg-6">
+      <% if @program.friendliness_rating == "LGBT Focused" %>
+        <%= image_tag("lgbt_focused.png", :class => "logo", :alt => "LGBT Focused", :title => "LGBT Focused") %>
+      <%end%>
+      <% if @program.friendliness_rating == "LGBT Friendly" %>
+        <%= image_tag("lgbt_friendly.png", :class => "logo", :alt => "LGBT Friendly", :title => "LGBT Friendly") %>
+      <%end%>
+
       <% if @program.description != "" %>
         <h2>Program Description</h2>
         <p><%= @program.description %></p>
