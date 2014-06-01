@@ -19,7 +19,8 @@ nav li { list-style: none; float: left; padding: 1em; font-size: 1.25em; text-tr
 nav li a {color: #666;}
 nav li a:hover {color: #D43F26; text-decoration: none;};
 
-.jumbotron h1, h2, h3, h4, h5, h6 {line-height: 1;}
+.jumbotron h1 {line-height: 1; display: table-cell; vertical-align: middle; color: #fff; position: absolute; top: 35%;}
+.jumbotron {height: 300px; background: url('lgbt_home.jpg') 50% 50%; background-size: cover;}
 
 .main {padding: 2em;}
 
@@ -36,6 +37,12 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 
 .resources-button, .volunteer-button {display: block; border: 0px; text-align: center; margin: 2em 0; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px;}
 .contact-button {display: block; border: 0px; text-align: center; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px; margin: .5em 0;}
+
+
+.mailchimp {display: block; background: #eee; max-height: 160px; height: 100%; max-width: 420px; width: 100%; margin: 1em auto; border-radius: 4px; padding: 1em;}
+.subscribe {margin: 0 auto;}
+#mce-EMAIL  {height: 35px; width: 300px;}
+.subscribe-button {border: 0px; text-align: center; margin: 0 auto; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px;}
 
 .contact, .volunteer {max-width: 500px;}
 .user_location{width: 20px; height:20px; border-radius: 20px; color:red}
