@@ -14,10 +14,12 @@ LGBTHomelessness::Application.routes.draw do
   post 'volunteer' => 'volunteer#create'
   get 'volunteers' => "volunteer#index"
 
+  post 'sms_request' => "sms#received"
+
   resources :organizations do
       resources :programs
   end
-  
+
   resources :programs
 
   # Example of regular route:

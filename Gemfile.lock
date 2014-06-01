@@ -38,6 +38,7 @@ GEM
     coffee-script-source (1.7.0)
     erubis (2.7.0)
     execjs (2.1.0)
+    geocoder (1.2.1)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -47,6 +48,7 @@ GEM
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
     json (1.8.1)
+    jwt (1.0.0)
     leaflet-rails (0.7.3)
     mail (2.5.4)
       mime-types (~> 1.16)
@@ -114,6 +116,10 @@ GEM
       polyglot (>= 0.3.1)
     turbolinks (2.2.2)
       coffee-rails
+    twilio-ruby (3.11.5)
+      builder (>= 2.1.2)
+      jwt (>= 0.1.2)
+      multi_json (>= 1.3.0)
     twitter-bootstrap-rails (2.2.8)
       actionpack (>= 3.1)
       execjs
@@ -130,6 +136,7 @@ PLATFORMS
 DEPENDENCIES
   bootstrap_form
   coffee-rails (~> 4.0.0)
+  geocoder
   jbuilder (~> 1.2)
   jquery-rails
   leaflet-rails
@@ -141,5 +148,6 @@ DEPENDENCIES
   sass-rails (~> 4.0.0)
   sdoc
   turbolinks
+  twilio-ruby
   twitter-bootstrap-rails
   uglifier (>= 1.3.0)
