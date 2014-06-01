@@ -27,7 +27,7 @@ $(document).ready(function(){
 			L.marker(e.latlng, {icon: myIcon}).addTo(map)
 				.bindPopup("You are within " + radius + " meters from this point").openPopup();
 
-			L.circle(e.latlng, radius).addTo(map);
+			L.circle(e.latlng, radius, {color: "red"}).addTo(map);
 
     });
     map.locate({setView: true, maxZoom: 16});
