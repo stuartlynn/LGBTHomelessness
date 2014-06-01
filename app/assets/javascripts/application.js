@@ -39,7 +39,15 @@ $(document).ready(function(){
           lng = $(this).data().lng;
           console.log(data)
           dist = Math.floor(e.latlng.distanceTo( L.latLng(lat, lng))*0.000621371)
-          $(this).append("<span class='dist badge'> aprox "+dist+" miles</span>")
+          dist_class = "purple"
+          if(dist <= 2){
+            dist_class = "green"
+          }else if(dist <=10){
+            dist_class = "blue"
+          }
+
+          distClass =
+          $(this).append("<span class='dist badge "+dist_class+"'> aprox "+dist+" miles</span>")
         }
       })
 
