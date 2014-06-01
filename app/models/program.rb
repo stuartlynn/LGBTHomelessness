@@ -9,9 +9,15 @@ class Program < ActiveRecord::Base
   scope :language_needed, ->(language){where("language_req like ?", language)}
   scope :services_offered, ->(request){where("services like ?", request)}
 
+<<<<<<< HEAD
   def self.service_query(query, service_array)
     output=[]
     query.each do |program|
+=======
+  def self.service_query(service_array)
+    output=[]
+    self.all.each do |program|
+>>>>>>> wrote the query
       service_array.each do |service|
         if program.services.include?(service)
           output << program
