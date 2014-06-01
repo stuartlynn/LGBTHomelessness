@@ -37,30 +37,28 @@
       <%end%>
 
       <% if @program.services != "" %>
-        <h3>Services Available</h3>
+        <h2>Services Available</h2>
         <p><%= @program.services %></p>
       <%end%>
 
       <% if @program.health_status_req != "" || @program.gender_req != "" || @program.sexual_orientation_requirement != "" %>
-        <h3>Eligibility Requirements:
-            <%= @program.health_status_req %> 
-            <%= @program.gender_req %>  
-            <%= @program.sexual_orientation_requirement %>
-        </h3>
+        <h2>Eligibility Requirements</h2>
+            <ul>
+              <li><%= @program.health_status_req %></li>
+              <li><%= @program.gender_req %></li> 
+              <li><%= @program.sexual_orientation_requirement %>
       <%end%>
-
       <% if @program.min_age != nil %>
-        <h3>Minimum Age Served:
-        <%= @program.min_age %> </h3>
-      <%end%>
-
+        <li>Ages <%= @program.min_age%>
+          <%end%>
       <% if @program.max_age != nil %>
-        <h3>Maximum Age Served:
-        <%= @program.max_age %> </h3>
-      <%end%>
-
-      <% if @program.language_req == "Y" %>
-        <h3>Spanish Speaking Program</h3>
+        - <%= @program.max_age %>
+      <%end%></li>
+    </ul>
+    
+    <% if @program.language_req == "Y" %>
+        <h2>Spanish Speaking Program</h2>
     <%end%>
+
   </div>
 
