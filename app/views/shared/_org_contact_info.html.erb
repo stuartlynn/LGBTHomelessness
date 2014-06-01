@@ -1,8 +1,17 @@
 <h2>Contact Info</h2>
-<p> <%=organization.address%>
-  <%=organization.address2%><br/>
-  <%=organization.city%>, <%=organization.state%><br/>
-  <%=organization.zip%><br/>
+<p> 
+  <% if organization.address != "" %>
+	<%=organization.address%><br />
+  <%end%>
+  <% if  organization.address2 != "" %>
+  	<%=organization.address2%><br/>
+  <%end%>
+  <% if organization.city != "" %>
+  	<%= organization.city%>, <%=organization.state%><br/>
+  <%end%>
+  <% if organization.zip != "" %> 
+  	<%= organization.zip%><br/>
+  <%end%>
 </p>
 <% if organization.phone_no and organization.phone_no.length > 0  %>
   <p> Phone number: <a href="tel:<%=organization.phone_no%>"><%=organization.phone_no%></a></p>
