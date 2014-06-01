@@ -7,8 +7,8 @@ body {background: #f9f9f9; word-wrap: break-word;}
 body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
 p, label {font-size: 16px;}
-a, li a, p a {color: #666; font-weight: 700;}
-a:hover, li a:hover, p a:hover {color: #D43F26;}
+a, li a, p a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {color: #666; font-weight: 700;}
+a:hover, li a:hover, p a:hover, h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover {color: #D43F26;}
 
 header {display: block; margin-bottom: 0 !important; padding-bottom: 1em; background: #fff;}
 
