@@ -23,9 +23,7 @@ task :load_data => :environment do
   end
 
   progs.each do |prog|
-
-
-    begin
+    
     Program.create({
         name: prog[2],
         friendliness_rating: prog[3],
@@ -42,10 +40,5 @@ task :load_data => :environment do
         services: prog[14],
         organization_id: look_up[prog[0]]
       })
-
-    rescue
-      binding.pry
-    end
-
-  end
+     end
 end

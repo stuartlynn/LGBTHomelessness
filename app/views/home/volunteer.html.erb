@@ -3,63 +3,66 @@
 
 	<p>Fill out the form below to indicate an interest in helping LGBT Homeless Youth. I will work to match you up with a volunteer opportunity.</p>
 
-	<label name="firstName">First Name<span class="required"> *</label>
-	<input type="text" id="firstName" name="name" required="true" class="volunteer input-block-level" placeholder="First Name">
-	 
-	<label name="firstName">Last Name</label>
-	<input type="text" id="lastName" name="name" class="volunteer input-block-level" placeholder="Last Name">
-	 
-	<label name="email">Email<span class="required"> *</required></label>
-	<input type="text" id="email" name="email" required="true" class="volunteer input-block-level" placeholder="Email">
-	 
-	<p>Announcements?</p>
-	<input type="radio" name="announcements" id="optionYes" value="y" checked>
-	Yes, send me announcements related to LGBT Youth Homelessness</br>
-	<input type="radio" name="announcements" id="optionNo" value="n">
-	No, don't send me announcements - just let me know how I can get involved.</br></br>
-	<label name="location">Your Location<span class="required"> *</span></br>
-	<small>(i.e. Chicago, IL - North Side)</small></label>
-	<input type="text" name="location" class="volunteer input-block-level" placeholder="Location">
-	 
-	<p>Would you be comfortable volunteering for a program that requires:</p>
-	 <input type="checkbox" name="programRequirements" value="a background check"> a background check</br>
-	 <input type="checkbox" name="programRequirements" value="a tuberculosis screening"> a tuberculosis screening</br>
-	 <input type="checkbox" name="programRequirements" value="lifting up to 50 pounds"> lifting up to 50 pounds</br>
-	 <input type="checkbox" name="programRequirements" value="working in an LGBT-affirming church setting"> working in an LGBT-affirming church setting</br></br>
+	<form action="/volunteer" method="post">
+		<label name="firstName">First Name<span class="required"> *</label>
+		<input type="text" id="firstName" name="first_name" class="volunteer input-block-level" placeholder="First Name">
+		 
+		<label name="firstName">Last Name</label>
+		<input type="text" id="lastName" name="last_name" class="volunteer input-block-level" placeholder="Last Name">
+		 
+		<label name="email">Email<span class="required"> *</required></label>
+		<input type="text" id="email" name="email" class="volunteer input-block-level" placeholder="Email">
+		 
+		<p>Announcements?</p>
+		<input type="radio" name="announcements" id="optionYes" value="y" checked>
+		Yes, send me announcements related to LGBT Youth Homelessness</br>
+		<input type="radio" name="announcements" id="optionNo" value="n">
+		No, don't send me announcements - just let me know how I can get involved.</br></br>
+		<label name="location">Your Location<span class="required"> *</span></br>
+		<small>(i.e. Chicago, IL - North Side)</small></label>
+		<input type="text" name="location" class="volunteer input-block-level" placeholder="Location">
+		 
+		<p>Would you be comfortable volunteering for a program that requires:</p>
+		 <input type="checkbox" name="programRequirements_group[]" value="a background check"> a background check</br>
+		 <input type="checkbox" name="programRequirements_group[]" value="a tuberculosis screening"> a tuberculosis screening</br>
+		 <input type="checkbox" name="programRequirements_group[]" value="lifting up to 50 pounds"> lifting up to 50 pounds</br>
+		 <input type="checkbox" name="programRequirements_group[]" value="working in an LGBT-affirming church setting"> working in an LGBT-affirming church setting</br></br>
 
-	<p>Your Age Range<span class="required"> *</span></p>
-	 <select required="true" name="age" id="age">
-	 <option value="Under 18">Under 18</option>
-	 <option value="Under 18">18-25</option>
-	 <option value="Under 18">26+</option>
-	 </select>
+		<p>Your Age Range<span class="required"> *</span></p>
+		 <select name="age" id="age">
+		 <option value="Under 18">Under 18</option>
+		 <option value="Under 18">18-25</option>
+		 <option value="Under 18">26+</option>
+		 </select>
 
-	<p>Specific Skills/Abilities</p>
-	 <input type="checkbox" name="skills" value="Food Preparation"> Food Preparation</br>
-	 <input type="checkbox" name="skills" value="Legal/Lawyer"> Legal/Lawyer</br>
-	 <input type="checkbox" name="skills" value="Doctor/Medical/Nurse"> Medical/Doctor/Nurse</br>
-	 <input type="checkbox" name="skills" value="Counselors/Mental Health Workers"> Counselors/Mental Health Workers</br>
-	 <input type="checkbox" name="skills" value="HIV/STI Testing Counselor"> HIV/STI Testing Counselor</br>
-	 <input type="checkbox" name="skills" value="Driver's license with car"> Driver's license with car</br>
-	 <input type="checkbox" name="skills" value="Babysitting"> Babysitting</br>
-	 <input type="checkbox" name="skills" value="Tutoring"> Tutoring</br>
-	 <input type="checkbox" name="skills" value="Mentoring"> Mentoring</br>
-	 <input type="checkbox" name="skills" value="Training/Speaking"> Training/Speaking</br>
-	 <input type="checkbox" name="skills" value="Fundraising"> Fundraising</br>
-	 <input type="checkbox" name="skills" value="Other"> Other: <input type="text" class="volunteer input-block-level" placeholder="Other skills"></br></br>
+		<p>Specific Skills/Abilities</p>
+		 <input type="checkbox" name="skills_group[]" value="Food Preparation"> Food Preparation</br>
+		 <input type="checkbox" name="skills_group[]" value="Legal/Lawyer"> Legal/Lawyer</br>
+		 <input type="checkbox" name="skills_group[]" value="Doctor/Medical/Nurse"> Medical/Doctor/Nurse</br>
+		 <input type="checkbox" name="skills_group[]" value="Counselors/Mental Health Workers"> Counselors/Mental Health Workers</br>
+		 <input type="checkbox" name="skills_group[]" value="HIV/STI Testing Counselor"> HIV/STI Testing Counselor</br>
+		 <input type="checkbox" name="skills_group[]" value="Driver's license with car"> Driver's license with car</br>
+		 <input type="checkbox" name="skills_group[]" value="Babysitting"> Babysitting</br>
+		 <input type="checkbox" name="skills_group[]" value="Tutoring"> Tutoring</br>
+		 <input type="checkbox" name="skills_group[]" value="Mentoring"> Mentoring</br>
+		 <input type="checkbox" name="skills_group[]" value="Training/Speaking"> Training/Speaking</br>
+		 <input type="checkbox" name="skills_group[]" value="Fundraising"> Fundraising</br>
+		 <input type="checkbox" name="skills_group[]" value="Other"> Other: <input type="text" class="volunteer input-block-level" placeholder="Other skills_group[]"></br></br>
 
-	<p>How much time do you have to give?</p>
-	 <input type="checkbox" name="time" value="5 minutes"> 5 minutes</br>
-	 <input type="checkbox" name="time" value="Event-specific (One-Off)"> Event-specific (One-Off)</br>
-	 <input type="checkbox" name="time" value="Weekly"> Weekly</br>
-	 <input type="checkbox" name="time" value="Monthly"> Monthly</br>
-	 <input type="checkbox" name="time" value="Other"> Other: <input type="text" name="time" class="volunteer input-block-level" placeholder="Availability"></br></br>
+		<p>How much time do you have to give?</p>
+		 <input type="checkbox" name="time_group[]" value="5 minutes"> 5 minutes</br>
+		 <input type="checkbox" name="time_group[]" value="Event-specific (One-Off)"> Event-specific (One-Off)</br>
+		 <input type="checkbox" name="time_group[]" value="Weekly"> Weekly</br>
+		 <input type="checkbox" name="time_group[]" value="Monthly"> Monthly</br>
+		 <input type="checkbox" name="time_group[]" value="Other"> Other: <input type="text" name="time_group[]" class="volunteer input-block-level" placeholder="Availability"></br></br>
 
-	<p>When would you be available?</br>
-	<small>(i.e. Sundays after noon)</small></p>
-	<textarea row="5" class="volunteer input-block-level"></textarea>
-	 
-	<p>Anything else I should know when trying to match you with a volunteer opportunity?</p>
-	<textarea row="5" class="volunteer input-block-level"></textarea>
-	<button class="volunteer-button">Submit</button>
+		<p>When would you be available?</br>
+		<small>(i.e. Sundays after noon)</small></p>
+		<textarea row="5" name="available" class="volunteer input-block-level"></textarea>
+		 
+		<p>Anything else I should know when trying to match you with a volunteer opportunity?</p>
+		<textarea row="5" name="anything_else" class="volunteer input-block-level"></textarea>
+		<button class="volunteer-button">Submit</button>
+		<%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %>
+	</form>
 </div>

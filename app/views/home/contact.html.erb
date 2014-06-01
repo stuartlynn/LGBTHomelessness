@@ -1,6 +1,6 @@
 <div class="main col-lg-12">
 	<h1><%= content_for(:title, "Contact Us") %>Contact Us</h1>
-		<form>
+		<form action="/contact" method="post">
             <fieldset>
             	<label name="name">Name<span class="required"> *</span></label>
                 <input type="text" id="name" name="name" required="true" class="contact input-block-level" placeholder="Name">
@@ -10,5 +10,6 @@
                 <textarea rows="3" id="message" name="message" required="true" class="contact input-block-level" placeholder="Message"></textarea>
                 <button type="submit" class="contact-button">Submit</button>
             </fieldset>
+            <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> 
         </form>
 </div>
