@@ -23,11 +23,25 @@ $(document).ready(function(){
     map.on('locationfound', function(e){
       var radius = e.accuracy / 2;
 
-    var myIcon = L.divIcon({className: 'user_location'});
+      var myIcon = L.divIcon({className: 'user_location'});
 			L.marker(e.latlng, {icon: myIcon}).addTo(map)
 				.bindPopup("You are within " + radius + " meters from this point").openPopup();
 
 			L.circle(e.latlng, radius, {color: "red"}).addTo(map);
+
+      $(".place").each(function(){
+        console.log("here")
+
+        data = lat = $(this).data()
+
+        if(typeof(data) != undefined && data.lat != "" && data.lng != ""){
+          lat = $(this).data().lat;
+          lng = $(this).data().lng;
+          console.log(data)
+          dist = Math.floor(e.latlng.distanceTo( L.latLng(lat, lng))*0.000621371)
+          $(this).append("<span class='dist badge'> aprox "+dist+" miles</span>")
+        }
+      })
 
     });
     map.locate({setView: true, maxZoom: 16});
