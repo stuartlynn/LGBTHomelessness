@@ -12,5 +12,9 @@
   <p>Email: <%=organization.email%> </p>
 <%end%>
 <% if organization.website and organization.website.length > 0%>
-  <p>Website: <a href='http://<%=organization.website%>'><%=organization.website %></a> </p>
+  <% if organization.website.match(/http(s)?:\/\//) %>
+    <p>Website: <a href='<%=organization.website%>'><%=organization.website %></a> </p>
+  <% else %>
+    <p>Website: <a href='http://<%=organization.website%>'><%=organization.website %></a> </p>
+  <% end %>
 <%end%>
