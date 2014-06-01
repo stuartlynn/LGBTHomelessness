@@ -10,6 +10,8 @@ LGBTHomelessness::Application.routes.draw do
   get 'contact' => "home#contact"
   get 'calendar' => "home#calendar"
   get 'results' => "home#result"
+  post 'contact' => "contact#create"
+  post 'volunteer' => 'volunteer#create'
 
   resources :organizations do
       resources :programs

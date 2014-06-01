@@ -44,6 +44,7 @@ end
 
 # Use Capistrano for deployment
 # gem 'capistrano', group: :development
+gem 'pony'
 
 # Use debugger
 gem "pry", group:[:development]
