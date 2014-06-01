@@ -1,0 +1,14 @@
+<%= bootstrap_form_for(@organization, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_area :description %>
+  <%= f.text_field :address %>
+  <%= f.text_field :city %>
+  <%= f.text_field :state %>
+  <%= f.text_field :zip %>
+  <%= f.telephone_field :phone_no %>
+  <%= f.url_field :website %>
+  <%= f.email_field :email %>
+  <%= f.text_field :latitude %>
+  <%= f.text_field :longitude %>
+  <%= f.submit %>
+<% end %>

@@ -37,9 +37,16 @@
       <%=@organization.city%>, <%=@organization.state%><br/>
       <%=@organization.zip%><br/>
     </p>
-    <p> Phone number: <%=@organization.phone_no%></p>
-    <p> Email: <%=@organization.email%> </p>
-    <p> Website: <%=link_to @organization.website, @organization.website %></a> </p>
+    <% if @organization.phone_no and @organization.phone_no.length > 0  %>
+      <p> Phone number: <a href="tel:<%=@organization.phone_no%>"><%=@organization.phone_no%></a></p>
+    <%end%>
+
+    <% if @organization.email and @organization.email.length > 0%>
+      <p> Email: <%=@organization.email%> </p>
+    <%end%>
+    <% if @organization.website and @organization.website.length > 0%>
+      <p> Website: <%=link_to @organization.website, @organization.website %></a> </p>
+    <%end%>
     <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' > You are currently  </p>
 </div>
 
