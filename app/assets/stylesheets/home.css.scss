@@ -2,15 +2,26 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
+body {background: #f9f9f9;}
 
-.header {display: block; margin-bottom: 3em; max-height: 80px;}
+body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
+
+p {font-size: 16px;}
+p a {color: #666; font-weight: 700;}
+p a:hover {color: #D43F26;}
+
+header {display: block; margin-bottom: 0 !important; padding-bottom: 1em; background: #fff;}
 
 .logo {max-width: 150px; float: left; display: block; margin: .5em 0;}
 
-nav {float: right;}
+nav {float: right; margin-top: 1.5em;}
 nav li { list-style: none; float: left; padding: 1em; font-size: 1.25em; text-transform: uppercase;}
 nav li a {color: #666;}
-nav li a:hover {color: #D43F26; text-decoration: none;};
+nav li a:hover {color: #D43F26; text-decoration: none;}; 
 
-.call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; color: #fff; padding: 10px; font-size: 2em;}
+.jumbotron h1, h2, h3, h4, h5, h6 {line-height: 1;}
+
+.call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; padding: 10px; font-size: 2em;}
+.call-to-service a, a:hover {color: #fff; text-decoration: none;}
+
+.serving {text-align: center;}

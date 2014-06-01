@@ -12,6 +12,10 @@ class HomeController < ApplicationController
     
   end
 
+  def volunteer
+
+  end
+
   def results
     @programs = Program.all()
   end

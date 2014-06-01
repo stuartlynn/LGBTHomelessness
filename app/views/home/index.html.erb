@@ -1,11 +1,14 @@
-
-<div class="jumbotron">
+<div class="col-lg-12 jumbotron">
 	<h1><%= content_for(:title, "Resources for LGBT Homeless Youth") %>Resources for LGBT Homeless Youth</h1>
 </div>
 
-<div class="col-md-6">
-  <button class="call-to-service">I need help</button>
+<div class="col-lg-6">
+  <button class="call-to-service"><%= link_to "I need help", who_are_you_path %></button>
 </div>
-<div class="col-md-6">
-  <button class="call-to-service">I want to help</button>
+<div class="col-lg-6">
+  <button class="call-to-service"><%= link_to "I want to help", volunteer_path %></button>
+</div>
+
+<div class="col-lg-12">
+	<h3 class="serving">Serving the Chicago area LGBT youth.</h3>
 </div>
