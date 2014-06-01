@@ -4,13 +4,15 @@
 
 body {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
-.header {display: block; margin-bottom: 3em; max-height: 80px;}
+header {display: block; margin-bottom: 3em; background: #fff;}
 
 .logo {max-width: 150px; float: left; display: block; margin: .5em 0;}
 
-nav {float: right;}
+nav {float: right; margin-top: 1.5em;}
 nav li { list-style: none; float: left; padding: 1em; font-size: 1.25em; text-transform: uppercase;}
 nav li a {color: #666;}
-nav li a:hover {color: #D43F26; text-decoration: none;};
+nav li a:hover {color: #D43F26; text-decoration: none;}; 
+
+.jumbotron h1, h2, h3, h4, h5, h6 {line-height: 1;}
 
 .call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; color: #fff; padding: 10px; font-size: 2em;}
