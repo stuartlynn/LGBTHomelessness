@@ -1,25 +1,23 @@
-<div class="col-lg-12">
+<div class="main col-lg-12">
 
-<% unless @organizations.empty? %>
-    <%=
-       first_valid  = @organizations.select{|o| o.latitude}.first
-       map(:center => {
-          :latlng => [first_valid.latitude, first_valid.longitude],
-          :zoom => 10,
-        },
-        :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
-        :markers => @organizations.select{|o| o.latitude and o.longitude }.collect{|o| {:latlng => [o.latitude, o.longitude]}},
-        :max_zoom => 15
-    ) %>
-  </div>
+  <% unless @organizations.empty? %>
+      <%=
+         first_valid  = @organizations.select{|o| o.latitude}.first
+         map(:center => {
+            :latlng => [first_valid.latitude, first_valid.longitude],
+            :zoom => 10,
+          },
+          :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+          :markers => @organizations.select{|o| o.latitude and o.longitude }.collect{|o| {:latlng => [o.latitude, o.longitude]}},
+          :max_zoom => 15
+      ) %>
 
-  <div class="col-lg-12">
-    <ul class='list-group'>
-      <% @organizations.each do |organization| %>
-        <li class='list-group-item place' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' ><%= link_to organization.name, organization %> <span class="badge"><%=organization.programs.count%></span></li>
-      <%end%>
-    </ul>
-  </div>
-<%else%>
-  <h2> No results found </h2>
-<%end%>
+      <ul class='list-group results'>
+        <% @organizations.each do |organization| %>
+          <li class='list-group-item place' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' ><%= link_to organization.name, organization %> <span class="badge"><%=organization.programs.count%></span></li>
+        <%end%>
+      </ul>
+  <%else%>
+    <h2>No results found</h2>
+  <%end%>
+</div>

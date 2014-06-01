@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {background: #f9f9f9;}
+body {background: #f9f9f9; word-wrap: break-word;}
 
 body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
@@ -49,6 +49,8 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 
 
 small {color: #666;}
+
+.results {margin: 2em auto;}
 
 .blue{
   background-color: #0000b2;
