@@ -6,7 +6,7 @@ LGBTHomelessness::Application.routes.draw do
   root 'home#index'
   get 'about' => "home#about"
   get 'who_are_you' => "home#who"
-
+  get 'volunteer' => "home#volunteer"
   get 'contact' => "home#contact"
   get 'results' => "home#result"
 

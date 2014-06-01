@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
+body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
 header {display: block; margin-bottom: 3em; background: #fff;}
 
@@ -15,4 +15,5 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 
 .jumbotron h1, h2, h3, h4, h5, h6 {line-height: 1;}
 
-.call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; color: #fff; padding: 10px; font-size: 2em;}
+.call-to-service {display: block; border: 0px; text-align: center; margin: 1em auto; border-radius: 4px; background: #D43F26; padding: 10px; font-size: 2em;}
+.call-to-service a, a:hover {color: #fff; text-decoration: none;}
