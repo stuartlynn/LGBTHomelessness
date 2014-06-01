@@ -5,13 +5,13 @@
 
 	<form action="/volunteer" method="post">
 		<label name="firstName">First Name<span class="required"> *</label>
-		<input type="text" id="firstName" name="first_name" class="volunteer input-block-level" placeholder="First Name">
+		<input type="text" id="firstName" name="first_name" class="volunteer input-block-level" required="true"  placeholder="First Name">
 		 
 		<label name="firstName">Last Name</label>
 		<input type="text" id="lastName" name="last_name" class="volunteer input-block-level" placeholder="Last Name">
 		 
 		<label name="email">Email<span class="required"> *</required></label>
-		<input type="text" id="email" name="email" class="volunteer input-block-level" placeholder="Email">
+		<input type="text" id="email" name="email" required="true" class="volunteer input-block-level" placeholder="Email">
 		 
 		<p>Announcements?</p>
 		<input type="radio" name="announcements" id="optionYes" value="y" checked>
