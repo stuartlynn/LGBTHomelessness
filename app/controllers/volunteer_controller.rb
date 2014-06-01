@@ -4,7 +4,7 @@ class VolunteerController < ApplicationController
     volunteer =  Volunteer.create!(first_name: params[:first_name],
       last_name: params[:last_name],
       email: params[:email],
-      announcment: params[:announcments],
+      announcment: params[:announcements],
       location: params[:location],
       program_requirements: (params[:programRequirements_group].join(",")),
       age: params[:age],
