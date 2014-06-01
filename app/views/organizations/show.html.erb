@@ -1,23 +1,24 @@
 <h1><%=@organization.name%></h1>
 
 
-<div class='programs'>
+<div class='programs container'>
   <h2>Programs</h2>
   <%@organization.programs.each do |program| %>
     <li> <%=link_to program.name, program%> </li>
   <%end%>
-</div>
+</div><br/>
 
 
-<div class='address'>
+<div class='address container'>
+    <h2> Contact Info</h2>
     <p> <%=@organization.address%>
       <%=@organization.address2%><br/>
-      <%=@organization.city%><br/>
-      <%=@organization.state%><br/>
+      <%=@organization.city%>, <%=@organization.state%><br/>
       <%=@organization.zip%><br/>
     </p>
-    <p> Phone no : <%=@organization.phone_no%></p>
-    <p> email: <%=@organization.email%> </p>
+    <p> Phone number: <%=@organization.phone_no%></p>
+    <p> Email: <%=@organization.email%> </p>
+    <p> Website: <%=link_to @organization.website, @organization.website %></a> </p>
 </div>
 
 
