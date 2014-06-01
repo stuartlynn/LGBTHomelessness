@@ -1,8 +1,11 @@
 <div class="main col-lg-6">
+
 <% if @program.name == "" %>
-  <h1><%= @program.organization.name %></h1>
+  <h1> <%= @program.organization.name%></h1>
+  <h2>@ <%= link_to  @program.organization.name, @program.organization %></h2>
 <%else%>
   <h1><%= @program.name %></h1>
+  <h2>@ <%= link_to  @program.organization.name, @program.organization %></h2>
 <%end%>
 
   <% if @program.organization.latitude and @program.organization.longitude %>
@@ -52,7 +55,7 @@
         <h2>Eligibility Requirements</h2>
             <ul>
               <li><%= @program.health_status_req %></li>
-              <li><%= @program.gender_req %></li> 
+              <li><%= @program.gender_req %></li>
               <li><%= @program.sexual_orientation_requirement %>
       <%end%>
       <% if @program.min_age != nil %>
@@ -62,10 +65,12 @@
         - <%= @program.max_age %>
       <%end%></li>
     </ul>
-    
+
+    <%=render partial: 'shared/org_contact_info', locals: {organization: @program.organization}%>
+
+
     <% if @program.language_req == "Y" %>
         <h2>Spanish Speaking Program</h2>
     <%end%>
 
   </div>
-
