@@ -16,3 +16,20 @@
 //= require turbolinks
 //= require_tree .
 //= require leaflet
+
+
+$(document).ready(function(){
+  if($("#map").length > 0){
+    map.on('locationfound', function(e){
+      var radius = e.accuracy / 2;
+
+    var myIcon = L.divIcon({className: 'user_location'});
+			L.marker(e.latlng, {icon: myIcon}).addTo(map)
+				.bindPopup("You are within " + radius + " meters from this point").openPopup();
+
+			L.circle(e.latlng, radius).addTo(map);
+
+    });
+    map.locate({setView: true, maxZoom: 16});
+  }
+})
