@@ -7,8 +7,8 @@ body {background: #f9f9f9;}
 body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
 p {font-size: 16px;}
-p a {color: #666; font-weight: 700;}
-p a:hover {color: #D43F26;}
+a, li a, p a {color: #666; font-weight: 700;}
+a:hover, li a:hover, p a:hover {color: #D43F26;}
 
 header {display: block; margin-bottom: 0 !important; padding-bottom: 1em; background: #fff;}
 
