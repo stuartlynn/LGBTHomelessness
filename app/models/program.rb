@@ -3,7 +3,8 @@ class Program < ActiveRecord::Base
 
   scope :friendliness, ->(rate) {where(friendliness_rating: rate)}
   scope :age_range, -> (age){ where("min_age <= ? OR min_age IS null", age).where( "max_age >= ? OR max_age IS null", age)}
-  scope :gender_required, ->(gender){where(gender_req: gender)}
+  scope :gender_required, ->(gender){where("gender_req like ?", gender)}
+  scope :sexual_orientation_required, ->(orientation){where("sexual_orientation_requirement = ?", orientation)}
   # scope :health_req, ->(status){where(health_status_req: status)}
   scope :language_needed, ->(language){where(language_req: language)}
   scope :services_offered, ->(request){where("services like ?", request)}
