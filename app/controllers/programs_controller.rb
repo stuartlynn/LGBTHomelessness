@@ -1,5 +1,6 @@
 class ProgramsController < ActionController::Base
-  respond_to :json
+  respond_to :json, :html
+  layout "application"
 
   def index
     @programs = Program.all

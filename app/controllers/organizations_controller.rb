@@ -1,5 +1,7 @@
 class OrganizationsController < ActionController::Base
   respond_to :json, :html
+  layout "application"
+
 
   def index
     @organizations = Organization.all
