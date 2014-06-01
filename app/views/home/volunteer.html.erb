@@ -4,13 +4,13 @@
 	<p>Fill out the form below to indicate an interest in helping LGBT Homeless Youth. I will work to match you up with a volunteer opportunity.</p>
 
 	<label name="firstName">First Name<span class="required"> *</label>
-	<input type="text" id="firstName" name="name" class="volunteer input-block-level" placeholder="First Name">
+	<input type="text" id="firstName" name="name" required="true" class="volunteer input-block-level" placeholder="First Name">
 	 
 	<label name="firstName">Last Name</label>
 	<input type="text" id="lastName" name="name" class="volunteer input-block-level" placeholder="Last Name">
 	 
 	<label name="email">Email<span class="required"> *</required></label>
-	<input type="text" id="email" name="email" class="volunteer input-block-level" placeholder="Email">
+	<input type="text" id="email" name="email" required="true" class="volunteer input-block-level" placeholder="Email">
 	 
 	<p>Announcements?</p>
 	<input type="radio" name="announcements" id="optionYes" value="y" checked>
@@ -28,7 +28,7 @@
 	 <input type="checkbox" name="programRequirements" value="working in an LGBT-affirming church setting"> working in an LGBT-affirming church setting</br></br>
 
 	<p>Your Age Range<span class="required"> *</span></p>
-	 <select name="age" id="age">
+	 <select required="true" name="age" id="age">
 	 <option value="Under 18">Under 18</option>
 	 <option value="Under 18">18-25</option>
 	 <option value="Under 18">26+</option>

@@ -59,9 +59,15 @@
       <% if @program.health_status_req != "" || @program.gender_req != "" || @program.sexual_orientation_requirement != "" %>
         <h2>Eligibility Requirements</h2>
             <ul>
-              <li><%= @program.health_status_req %></li>
-              <li><%= @program.gender_req %></li>
-              <li><%= @program.sexual_orientation_requirement %>
+              <% if @program.health_status_req != "" %>
+                <li><%= @program.health_status_req %></li>
+              <%end%>
+              <% if @program.gender_req != "" %>
+                <li><%= @program.gender_req %></li>
+              <%end%>
+              <% if @program.sexual_orientation_requirement != "" %>
+               <li><%= @program.sexual_orientation_requirement %>
+              <%end%>
       <%end%>
       <% if @program.min_age != nil %>
         <li>Ages <%= @program.min_age%>
