@@ -7,7 +7,7 @@ class SmsController < ActionController::Base
     result = Organization.all.collect{|o| [o, Geocoder::Calculations.distance_between(test_location, [o.latitude, o.longitude])]}.sort{|a,b| a[0] <=> b[0]}.first
 
     respond_to do |format|
-      format.xml { render: """
+      format.xml { render :xml => """
         <Response>
           <Message>
             Nearest help is at #{result[0].address}, #{result[0].address2} https://www.google.com/maps/preview?q=#{result[0].latitude},#{result[0].longitude}
