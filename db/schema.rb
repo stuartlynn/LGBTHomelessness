@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 20140601044636) do
     t.text     "program_timing"
     t.string   "language_req"
     t.string   "program_categorization"
-    t.string   "services"
+    t.text     "services"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "sexual_orientation_requirement"
