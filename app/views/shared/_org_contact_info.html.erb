@@ -12,5 +12,5 @@
   <p>Email: <%=organization.email%> </p>
 <%end%>
 <% if organization.website and organization.website.length > 0%>
-  <p>Website: <%=link_to organization.website, organization.website %></a> </p>
+  <p>Website: <a href='http://<%=organization.website%>'><%=organization.website %></a> </p>
 <%end%>
