@@ -16,7 +16,9 @@ task :load_data => :environment do
                         phone_no: org_data[7],
                         website: org_data[8],
                         email: org_data[9],
-                        description: "" )
+                        description: "",
+                        latitude: org_data[10],
+                        longitude: org_data[11])
     look_up[org_data[0]] = o.id
   end
 
