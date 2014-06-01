@@ -4,7 +4,7 @@ task :load_data => :environment do
   Program.delete_all
 
   orgs  = IO.read("data/Organization.tsv").split("\n")[1..-1].collect{|l| l.split("\t")}
-  progs = IO.read("data/Program.tsv").split("\n")[1..24].collect{|l| l.split("\t")}
+  progs = IO.read("data/Program.tsv").split("\n")[1..-1].collect{|l| l.split("\t")}
   look_up = {}
   orgs.each do |org_data|
     o = Organization.create(name: org_data[1],
@@ -25,22 +25,27 @@ task :load_data => :environment do
   progs.each do |prog|
 
 
+    begin
     Program.create({
         name: prog[2],
         friendliness_rating: prog[3],
         min_age: prog[4],
         max_age: prog[5],
-        health_status_req: prog[6],
-        gender_req: prog[7],
+        health_status_req: prog[7],
+        gender_req: prog[8],
         access_to_services: prog[8],
-        description: prog[9],
-        program_timing: prog[10],
-        language_req: prog[11],
-        program_categorization: prog[12],
-        services: prog[13],
-        organization_id: look_up[prog[1]]
+        sexual_orientation_requirement: prog[9],
+        description: prog[11],
+        program_timing: prog[12],
+        language_req: prog[6],
+        program_categorization: prog[13],
+        services: prog[14],
+        organization_id: look_up[prog[0]]
       })
 
+    rescue
+      binding.pry
+    end
 
   end
 end
