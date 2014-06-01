@@ -1,4 +1,9 @@
-<h1> <%= @program.name %></h1>
+<% if @program.name == "" %>
+  <h1> <%= @program.organization.name %></h1>
+<%else%>
+  <h1> <%= @program.name %></h1>
+<%end%>
+
 <div class="span7">
   <%= map(:center => {
         :latlng => [@program.organization.latitude, @program.organization.longitude],
