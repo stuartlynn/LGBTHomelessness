@@ -9,11 +9,14 @@ class HomeController < ApplicationController
   end
 
   def who
-    
+
   end
 
   def volunteer
 
+  end
+
+  def calendar
   end
 
   def results
