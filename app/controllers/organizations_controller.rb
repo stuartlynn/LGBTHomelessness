@@ -21,8 +21,11 @@ class OrganizationsController < ActionController::Base
       query = query.language_needed(params[:spanish])
     end
 
-    @organizations = query.all.collect{|p| p.organization}.uniq
+    if(params[:services_group])
+      query = Program.service_query(query, params[:services_group].join(",").split(","))
+    end
 
+    @organizations = query.collect{|p| p.organization}.uniq
     respond_with @organizations
   end
 
