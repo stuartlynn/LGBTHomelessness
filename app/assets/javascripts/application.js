@@ -48,7 +48,6 @@ $(document).ready(function(){
         if(typeof(data) != undefined && data.lat != "" && data.lng != ""){
           lat = $(this).data().lat;
           lng = $(this).data().lng;
-          console.log(data)
           dist_raw = e.latlng.distanceTo( L.latLng(lat, lng))*0.000621371
           dist = Math.floor(dist_raw)
           dist_class = "purple"
@@ -61,9 +60,12 @@ $(document).ready(function(){
           $(this).append("<span class='dist badge "+dist_class+"'> aprox "+dist+" miles</span>")
           $(this).attr("data-dist", dist_raw)
         }
+        else{
+          $(this).attr("data-dist", 10000000)
+        }
       })
 
-      $(".place.sortable").tsort({attr:'data-dist'});
+      $(".place.sortable").tsort({attr:'data-dist', order: "asc"});
 
 
     });
