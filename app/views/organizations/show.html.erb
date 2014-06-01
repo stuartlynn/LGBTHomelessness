@@ -1,6 +1,4 @@
-<div class="main">
-
-    <div class="col-lg-6">
+<div class="main col-lg-6">
     <h1><%=@organization.name%></h1>
 
   <% if @organization.latitude and @organization.longitude %>
@@ -19,18 +17,18 @@
 
   </div>
 
-<div class="col-lg-6">
+<div class="main col-lg-6">
 
   <h2>Programs</h2>
   <%@organization.programs.each do |program| %>
     <% if program.name == "" %>
-      <li> <%=link_to @organization.name, program_path(program.id) %> </li>
+      <li><%=link_to @organization.name, program_path(program.id) %> </li>
     <%else%>
-      <li> <%=link_to program.name, program_path(program.id)%> </li>
+      <li><%=link_to program.name, program_path(program.id)%> </li>
     <%end%>
   <%end%>
 
-    <h2> Contact Info</h2>
+    <h2>Contact Info</h2>
     <p> <%=@organization.address%>
       <%=@organization.address2%><br/>
       <%=@organization.city%>, <%=@organization.state%><br/>
@@ -41,13 +39,11 @@
     <%end%>
 
     <% if @organization.email and @organization.email.length > 0%>
-      <p> Email: <%=@organization.email%> </p>
+      <p>Email: <%=@organization.email%> </p>
     <%end%>
     <% if @organization.website and @organization.website.length > 0%>
-      <p> Website: <%=link_to @organization.website, @organization.website %></a> </p>
+      <p>Website: <%=link_to @organization.website, @organization.website %></a> </p>
     <%end%>
-    <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' > You are currently  </p>
-
-</div>
+    <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' >You are currently  </p>
 
 </div>
