@@ -4,15 +4,17 @@
   <h1> <%= @program.name %></h1>
 <%end%>
 
-<div class="span7">
-  <%= map(:center => {
-        :latlng => [@program.organization.latitude, @program.organization.longitude],
-        :zoom => 12,
-      },
-      :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
-      :markers => [{
-          :latlng => [@program.organization.latitude, @program.organization.longitude]
-      }],
-      :max_zoom => 16
-  ) %>
-</div>
+<% if @program.organization.latitude and @program.organization.longitude %>
+  <div class="span7">
+    <%= map(:center => {
+          :latlng => [@program.organization.latitude, @program.organization.longitude],
+          :zoom => 12,
+        },
+        :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+        :markers => [{
+            :latlng => [@program.organization.latitude, @program.organization.longitude]
+        }],
+        :max_zoom => 16
+    ) %>
+  </div>
+<%end%>

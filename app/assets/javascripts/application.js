@@ -23,6 +23,11 @@ $(document).ready(function(){
     map.on('locationfound', function(e){
       var radius = e.accuracy / 2;
 
+      href =$(".directions").first().attr("href")
+      href = href.replace("ll", "daddr")
+      href+= "&saddr="+e.latlng.lat+","+e.latlng.lng
+      $(".directions").attr("href", href)
+
       var myIcon = L.divIcon({className: 'user_location'});
 			L.marker(e.latlng, {icon: myIcon}).addTo(map)
 				.bindPopup("You are within " + radius + " meters from this point").openPopup();
