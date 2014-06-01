@@ -6,7 +6,7 @@ body {background: #f9f9f9;}
 
 body, input, button, select, textarea {font-family: 'Montserrat', 'Helvetica', 'Arial', sans-serif;}
 
-p {font-size: 16px;}
+p, label {font-size: 16px;}
 a, li a, p a {color: #666; font-weight: 700;}
 a:hover, li a:hover, p a:hover {color: #D43F26;}
 
@@ -34,8 +34,10 @@ nav li a:hover {color: #D43F26; text-decoration: none;};
 
 .required {color: #D43F26;}
 
-.resources-button {display: block; border: 0px; text-align: center; margin: 2em 0; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px;}
+.resources-button, .volunteer-button {display: block; border: 0px; text-align: center; margin: 2em 0; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px;}
 .contact-button {display: block; border: 0px; text-align: center; border-radius: 4px; background: #D43F26; color: #fff; padding: 8px; margin: .5em 0;}
 
-.contact {max-width: 500px;}
+.contact, .volunteer {max-width: 500px;}
 .user_location{width: 20px; height:20px; border-radius: 20px; color:red}
+
+small {color: #666;}
