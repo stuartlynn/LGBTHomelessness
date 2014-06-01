@@ -4,7 +4,6 @@
   <h1> <%= @program.name %></h1>
 <%end%>
 
-<<<<<<< HEAD
 <div class="span5">
   <% if @program.description != "" %>
     <h2>Program Description:</h2>
@@ -23,23 +22,27 @@
 </div>
 
 <div class="span7">
-  <%= map(:center => {
-        :latlng => [@program.organization.latitude, @program.organization.longitude],
-        :zoom => 12,
-      },
-      :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
-      :markers => [{
-          :latlng => [@program.organization.latitude, @program.organization.longitude]
-      }],
-      :max_zoom => 16
-  ) %>
+  <% if @program.organization.latitude and @program.organization.longitude %>
+    <div class="span7">
+      <%= map(:center => {
+            :latlng => [@program.organization.latitude, @program.organization.longitude],
+            :zoom => 10,
+          },
+          :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+          :markers => [{
+              :latlng => [@program.organization.latitude, @program.organization.longitude]
+          }],
+          :max_zoom => 16
+      ) %>
+    </div>
+  <%end%>
 
   <% if @program.services != "" %>
     <h3>Services Offered:
     <%= @program.services %> </h3>
   <%end%>
 
-  <% if @program.health_status_req != "" or @program.gender_req != "" or @program.sexual_orientation_req != "" %>
+  <% if @program.health_status_req != "" || @program.gender_req != "" || @program.sexual_orientation_req != "" %>
     <h3>Eligibility Requirements:
         <%= @program.health_status_req %> 
         <%= @program.gender_req %>  
@@ -62,22 +65,3 @@
   <%end%>
 </div>
 
-
-
-
-=======
-<% if @program.organization.latitude and @program.organization.longitude %>
-  <div class="span7">
-    <%= map(:center => {
-          :latlng => [@program.organization.latitude, @program.organization.longitude],
-          :zoom => 10,
-        },
-        :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
-        :markers => [{
-            :latlng => [@program.organization.latitude, @program.organization.longitude]
-        }],
-        :max_zoom => 16
-    ) %>
-  </div>
-<%end%>
->>>>>>> FETCH_HEAD
