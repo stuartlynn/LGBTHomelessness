@@ -21,5 +21,3 @@ class Program < ActiveRecord::Base
     output
   end
 end
-
-end
