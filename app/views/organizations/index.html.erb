@@ -18,15 +18,25 @@
 
       <ul class='list-group results'>
         <% @organizations.each do |organization| %>
-          <li class="friendliness">
-              <% if @program.friendliness_rating == "LGBT Focused" %>
-              <%= image_tag("lgbt_focused.png", :alt => "LGBT Focused", :title => "LGBT Focused") %>
-            <%end%>
-            <% if @program.friendliness_rating == "LGBT Friendly" %>
-              <%= image_tag("lgbt_friendly.png", :alt => "LGBT Friendly", :title => "LGBT Friendly") %>
-            <%end%>
-        </li>
-          <li class='list-group-item place sortable' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' ><%= link_to organization.name, organization %> <span class="badge"><%=organization.programs.count%></span></li>
+
+          <li class='list-group-item place sortable' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' >
+            <%= link_to organization.name, organization %>
+
+            <span class="friendliness">
+                <% organization.friendliness_ratings.each do |rating|%>
+                  <% if rating == "LGBT Focused" %>
+                    <%= image_tag("lgbt_focused.png", :alt => "LGBT Focused", :title => "LGBT Focused") %>
+                  <%end%>
+                  <% if rating == "LGBT Friendly" %>
+                    <%= image_tag("lgbt_friendly.png", :alt => "LGBT Friendly", :title => "LGBT Friendly") %>
+                  <%end%>
+                <%end%>
+
+            </span>
+
+            <span class="badge"><%=organization.programs.count%></span>
+
+          </li>
         <%end%>
       </ul>
   <%else%>
