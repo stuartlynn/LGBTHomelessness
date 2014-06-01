@@ -10,7 +10,9 @@ LGBTHomelessness::Application.routes.draw do
   get 'contact' => "home#contact"
   get 'results' => "home#result"
 
-  resources :organizations
+  resources :organizations do
+      resources :programs
+  end
   resources :programs
 
   # Example of regular route:

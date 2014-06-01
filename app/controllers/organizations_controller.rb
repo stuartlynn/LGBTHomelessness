@@ -9,29 +9,31 @@ class OrganizationsController < ActionController::Base
       query = query.age_range(params[:age])
     end
 
-
     if(params[:sex])
       query = query.gender_required(params[:sex])
     end
-
-
 
     if(params[:orientation])
       query = query.sexual_orientation_required(params[:orientation])
     end
 
-
-
     if(params[:spanish])
       query = query.language_needed(params[:spanish])
     end
 
-
-
-
     @organizations = query.all.collect{|p| p.organization}.uniq
 
     respond_with @organizations
+  end
+
+  def edit
+    @organization= Organization.find(params[:id])
+  end
+
+  def update
+    binding.pry
+    o = Organization.update(params[:id], organization_params)
+    redirect_to o
   end
 
   def create
@@ -46,7 +48,6 @@ class OrganizationsController < ActionController::Base
   def new
     @organization = Organization.new
   end
-
 
   def show
     @organization = Organization.find(params[:id])

@@ -1,0 +1,15 @@
+<%= bootstrap_form_for(@program, layout: :horizontal, label_col: "col-sm-2", control_col: "col-sm-10") do |f| %>
+  <%= f.text_field :name %>
+  <%= f.text_field :friendliness_rating %>
+  <%= f.text_field :min_age %>
+  <%= f.text_field :max_age %>
+  <%= f.text_field :health_status_req %>
+  <%= f.text_field :gender_req %>
+  <%= f.text_area :access_to_services %>
+  <%= f.text_area :description %>
+  <%= f.text_area :program_timing %>
+  <%= f.text_area :language_req %>
+  <%= f.text_area :program_categorization %>
+  <%= f.services :services %>
+  <%= f.submit %>
+<% end %>
