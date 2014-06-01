@@ -1,6 +1,6 @@
 class SmsController < ActionController::Base
 
-  def receive
+  def received
     query = params[:Body]
     test_location = Geocoder.search query
     test_location = test_location[0].data["geometry"]["location"].values
