@@ -1,9 +1,9 @@
 <div class="main col-lg-12">
 	<h2><%= content_for(:title, "How can we help you?") %>You are not alone.</h2>
-	
+
 	<p>We have a directory of services and information about how to access them. In order to help you find programs that can help you, please fill out the form below. We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</p>
 
-	<form>
+	<form method='get' action='/organizations'>
 	<p>What services do you need?</p>
 	<input type="checkbox" name="housingAndFood" value="Housing/Shelter, Food & Drop-In"> Housing/Shelter, Food & Drop-In<br/>
 	<input type="checkbox" name="health" value="Health including Counseling"> Health including Counseling<br/>
@@ -60,4 +60,3 @@
 
 
 </div>
-
