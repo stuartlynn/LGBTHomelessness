@@ -49,7 +49,8 @@ $(document).ready(function(){
           lat = $(this).data().lat;
           lng = $(this).data().lng;
           console.log(data)
-          dist = Math.floor(e.latlng.distanceTo( L.latLng(lat, lng))*0.000621371)
+          dist_raw = e.latlng.distanceTo( L.latLng(lat, lng))*0.000621371
+          dist = Math.floor(dist_raw)
           dist_class = "purple"
           if(dist <= 2){
             dist_class = "green"
@@ -57,10 +58,13 @@ $(document).ready(function(){
             dist_class = "blue"
           }
 
-          distClass =
           $(this).append("<span class='dist badge "+dist_class+"'> aprox "+dist+" miles</span>")
+          $(this).attr("data-dist", dist_raw)
         }
       })
+
+      $(".place.sortable").tsort({attr:'data-dist'});
+
 
     });
     map.locate({setView: true, maxZoom: 13});
