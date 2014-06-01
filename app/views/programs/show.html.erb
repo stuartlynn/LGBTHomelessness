@@ -1,1 +1,13 @@
 <h1> <%= @program.name %></h1>
+<div class="span7">
+  <%= map(:center => {
+        :latlng => [@program.organization.latitude, @program.organization.longitude],
+        :zoom => 12,
+      },
+      :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+      :markers => [{
+          :latlng => [@program.organization.latitude, @program.organization.longitude]
+      }],
+      :max_zoom => 12
+  ) %>
+</div>
