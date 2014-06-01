@@ -1,5 +1,20 @@
 <h1><%=@organization.name%></h1>
 
+<div class="container">
+  <%= map(:center => {
+        :latlng => [@organization.latitude, @organization.longitude],
+        :zoom => 12,
+      },
+      :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+      :markers => [{
+          :latlng => [@organization.latitude, @organization.longitude]
+      }],
+      :max_zoom => 16
+  ) %>
+</div>
+
+
+
 
 <div class='programs container'>
   <h2>Programs</h2>
@@ -23,6 +38,7 @@
     <p> Phone number: <%=@organization.phone_no%></p>
     <p> Email: <%=@organization.email%> </p>
     <p> Website: <%=link_to @organization.website, @organization.website %></a> </p>
+    <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' > You are currently  </p>
 </div>
 
 
