@@ -15,6 +15,7 @@ LGBTHomelessness::Application.routes.draw do
   get 'volunteers' => "volunteer#index"
 
   post 'sms_request' => "sms#received"
+  get  'sms_test'    => "sms#test"
 
   resources :organizations do
       resources :programs
