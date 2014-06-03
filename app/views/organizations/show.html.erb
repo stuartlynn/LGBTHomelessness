@@ -30,6 +30,8 @@
 
   <%=render partial: 'shared/org_contact_info', locals: {organization: @organization}%>
 
-  <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' >You are currently  </p>
+  <% if @organization.latitude and @organization.longitude %>
+    <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' >You are currently  </p>
+  <%end%>
 
 </div>
