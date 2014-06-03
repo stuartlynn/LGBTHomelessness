@@ -69,8 +69,9 @@ footer {padding: 1em; background: #eee; margin-top: 4em; text-align: center; }
 
 .friendliness img {width: 18px;}
 
-@media (max-width: 767px)
+@media (max-width: 767px) {
 body {
 padding-left: 0 !important;
 padding-right: 0 !important;
+}
 }
