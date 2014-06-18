@@ -26,3 +26,5 @@ config/secrets.yml
 Gemfile.lock
 
 app/views/programs/.Rhistory
+
+Gemfile.lock
