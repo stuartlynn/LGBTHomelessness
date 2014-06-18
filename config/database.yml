@@ -7,9 +7,9 @@ development:
 
   adapter: postgresql
   encoding: unicode
-  database: LGBT
+  database: lgbt
   pool: 5
-  username: laurendorman
+  username: alisons
   password:
 
 # Warning: The database defined as "test" will be erased and
