@@ -28,6 +28,11 @@
     <%end%>
   <%end%>
 
+  <%if @organization.description %>
+      <h2>Description</h2>
+      <P><%= @organization.description %></p>
+  <%end%>
+
   <%=render partial: 'shared/org_contact_info', locals: {organization: @organization}%>
 
   <% if @organization.latitude and @organization.longitude %>
