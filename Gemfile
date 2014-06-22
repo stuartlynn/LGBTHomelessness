@@ -51,3 +51,5 @@ gem 'pony'
 # Use debugger
 gem "pry", group:[:development]
 # gem 'debugger', group: [:development, :test]
+
+gem 'figaro'

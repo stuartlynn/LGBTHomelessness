@@ -28,3 +28,8 @@ Gemfile.lock
 app/views/programs/.Rhistory
 
 Gemfile.lock
+
+config/local_end.yml
+
+# Ignore application configuration
+/config/application.yml
