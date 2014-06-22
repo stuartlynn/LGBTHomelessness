@@ -13,6 +13,7 @@ LGBTHomelessness::Application.routes.draw do
   post 'contact' => "contact#create"
   post 'volunteer' => 'volunteer#create'
   get 'volunteers' => "volunteer#index"
+  get 'org_list' => "home#org_list"
 
   post 'sms_request' => "sms#received"
   get  'sms_test'    => "sms#test"

@@ -1,0 +1,25 @@
+<div class="main col-lg-12">
+
+      <ul class='list-group results'>
+        <% Organization.all.each do |organization| %>
+
+          <li class='list-group-item place sortable' >
+            <%= link_to organization.name, organization %>
+
+            <span class="friendliness">
+                <% organization.friendliness_ratings.each do |rating|%>
+                  <% if rating == "LGBT Focused" %>
+                    <%= image_tag("lgbt_focused.png", :alt => "LGBT Focused", :title => "LGBT Focused") %>
+                  <%end%>
+                  <% if rating == "LGBT Friendly" %>
+                    <%= image_tag("lgbt_friendly.png", :alt => "LGBT Friendly", :title => "LGBT Friendly") %>
+                  <%end%>
+                <%end%>
+            </span>
+
+            <span class="badge"><%=organization.programs.count%></span>
+
+          </li>
+        <%end%>
+      </ul>
+</div>

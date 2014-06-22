@@ -27,5 +27,8 @@ class HomeController < ApplicationController
 
   end
 
+  def org_list
+    
+  end 
 
 end
