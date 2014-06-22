@@ -1,4 +1,10 @@
-<div class="col-lg-12 jumbotron">
+ <section class="round">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+ </section>
+
+ <div class="col-lg-12 jumbotron">
 	<h1><%= content_for(:title, "Resources for LGBT Homeless Youth") %>Resources for LGBT Homeless Youth</h1>
 </div>
 

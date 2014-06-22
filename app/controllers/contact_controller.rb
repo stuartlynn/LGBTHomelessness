@@ -12,7 +12,7 @@ class ContactController < ApplicationController
       return if request.xhr?
      # render :text => 
       #format.html { redirect_to "/", notice: 'Your submission was sent.' }
-      redirect_to "/", alert: "Watch it, mister!"
+      redirect_to "/", alert: "Contact form successfully Submmitted."
       #puts '<B>Message sent successfully</b>'
     else
       @error = "something is missing"

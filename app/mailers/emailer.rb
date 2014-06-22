@@ -2,9 +2,6 @@ class Emailer < ActionMailer::Base
   default from: "LGBTHomelessness@gmail.com"
 
   def contact(recipient, subject, name, email, message, sent_at = Time.now)
-      @from = 'LGBTHomelessness@gmail.com'
-      @sent_on = sent_at
-      @headers = {}
       if message.is_a? String 
       	message_string = message
       else

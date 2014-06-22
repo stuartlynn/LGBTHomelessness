@@ -31,8 +31,9 @@ class VolunteerController < ApplicationController
       subject = "LGBTH Volunteer Sign-up"
       Emailer.volunteer(recipient, subject, name, email, message).deliver
       return if request.xhr?
-      redirect_to "/", alert: "Form saved."
+      redirect_to "/", alert: "Volunteer form successfully submmitted."
     else
+      flash[:error] = "Form submission failed."
       @error = "something is missing"
     end
   end 
