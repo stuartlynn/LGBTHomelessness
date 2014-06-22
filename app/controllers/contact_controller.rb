@@ -11,8 +11,9 @@ class ContactController < ApplicationController
       Emailer.contact(recipient, subject, name, email, message).deliver
       return if request.xhr?
      # render :text => 
-      redirect_to "/"
-      puts '<B>Message sent successfully</b>'
+      #format.html { redirect_to "/", notice: 'Your submission was sent.' }
+      redirect_to "/", alert: "Watch it, mister!"
+      #puts '<B>Message sent successfully</b>'
     else
       @error = "something is missing"
     end

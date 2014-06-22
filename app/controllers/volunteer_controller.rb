@@ -13,11 +13,29 @@ class VolunteerController < ApplicationController
       available: params[:available],
       anything_else: params[:anything_else] )
     if volunteer
-      redirect_to "/"
+      email = params[:email]
+      name = params[:first_name] + " " + params[:last_name]
+      message = "first_name: " + params[:first_name] + "\n"+
+        "last_name: " + params[:last_name]+ "\n"+
+        "email: " + params[:email]+ "\n"+
+        "announcment: " + params[:announcements]+ "\n"+
+        "location: " + params[:location]+ "\n"+
+        "program_requirements: " + (params[:programRequirements_group].join(","))+ "\n"+
+        "age: " + params[:age]+ "\n"+
+        "skills: " + (params[:skills_group].join(","))+ "\n"+
+        "time: " + (params[:time_group].join(","))+ "\n"+
+        "available: " + params[:available]+ "\n"+
+        "anything_else: " + params[:anything_else]
+
+      recipient = "LGBTHomelessness@gmail.com"
+      subject = "LGBTH Volunteer Sign-up"
+      Emailer.volunteer(recipient, subject, name, email, message).deliver
+      return if request.xhr?
+      redirect_to "/", alert: "Form saved."
     else
       @error = "something is missing"
     end
-  end
+  end 
 
   def index
     respond_to do |format|
