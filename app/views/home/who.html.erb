@@ -2,16 +2,20 @@
 	<h1><%= content_for(:title, "How can we help you?") %>You are not alone.</h1>
 
 	<form method='get' action='/organizations'>
-	<p>What services do you need? <span class="required"> *</span></p>
-	<input type="checkbox" name="services_group[]" value="housing,drop-in"> Shelter, Drop-In<br/>
-	<input type="checkbox" name="services_group[]" value="food"> Food <br />
-	<input type="checkbox" name="services_group[]" value="hotline"> Hotlines<br/>
-	<input type="checkbox" name="services_group[]" value="health,counseling"> Health including Counseling<br/>
-	<input type="checkbox" name="services_group[]" value="legal,domestic violence">
-	Legal including Domestic Violence<br/>
-	<input type="checkbox" name="services_group[]" value="education,employment"> Education, Employment</br>
-	<input type="checkbox" name="services_group[]" value="arts,activism"> Art, Activism</br>
-	<input type="checkbox" name="services_group[]" value="internet access"> Internet access</br></br>
+	<p>What service do you need? <span class="required"> *</span></p>
+	<input type="radio" name="services_group[]" value="housing"> Shelter<br/>
+	<input type="radio" name="services_group[]" value="drop-in"> Drop-in <br />
+	<input type="radio" name="services_group[]" value="food"> Food <br />
+	<input type="radio" name="services_group[]" value="hotline"> Hotlines<br/>
+	<input type="radio" name="services_group[]" value="health"> Health <br/>
+	<input type="radio" name="services_group[]" value="counseling"> Counseling <br />
+	<input type="radio" name="services_group[]" value="legal"> Legal<br/>
+	<input type="radio" name="services_group[]" value="domestic violence"> Domestic Violence<br />
+	<input type="radio" name="services_group[]" value="education"> Education<br />
+	<input type="radio" name="services_group[]" value="employment"> Employment<br />
+	<input type="radio" name="services_group[]" value="arts"> Art<br />
+	<input type="radio" name="services_group[]" value="activism"> Activism <br />
+	<input type="radio" name="services_group[]" value="internet access"> Internet access<br /><br />
 
 	<p>What is your current age?<span class="required"> *</span></p>
 		<small>We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</small></p>

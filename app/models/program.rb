@@ -7,7 +7,7 @@ class Program < ActiveRecord::Base
   scope :gender_required, ->(gender){where("gender_req like ? OR gender_req = '' ", gender)}
   # scope :health_req, ->(status){where(health_status_req: status)}
   scope :language_needed, ->(language){where("language_req like ?", language)}
-  scope :services_offered, ->(request){where("services in (?)", request)}
+  scope :services_offered, ->(request){where("services like ?", request)}
 
   def self.service_query(query, service_array)
     output=[]
