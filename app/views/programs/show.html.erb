@@ -1,4 +1,4 @@
-<div class="main col-lg-6">
+<div class="main col-lg-5">
 
 <% if @program.name == "" %>
   <h1><%= @program.organization.name%>  <% if @program.friendliness_rating == "LGBT Focused" %>
@@ -35,7 +35,7 @@
   </div>
 
 
-  <div class="main col-lg-6">
+  <div class="main col-lg-5">
       <% if @program.description != "" %>
         <h2>Program Description</h2>
         <p><%= @program.description %></p>
@@ -85,3 +85,7 @@
     <%end%>
 
   </div>
+
+  <div class="main col-lg-2">
+    <A HREF="/contact?flag_inaccurate_prog=<%= @program.id %>"><%= image_tag("flag_red.png", :alt => "Flag as Inaccurate", :title => "Flag as inaccurate") %> Flag as Inaccurate</a>
+</div>

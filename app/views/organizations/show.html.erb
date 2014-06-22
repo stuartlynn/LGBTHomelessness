@@ -1,4 +1,4 @@
-<div class="main col-lg-6">
+<div class="main col-lg-5">
     <h1><%=@organization.name%></h1>
 
   <% if @organization.latitude and @organization.longitude %>
@@ -15,9 +15,9 @@
       <a class='directions' href="http://maps.apple.com/?ll=<%=@organization.latitude%>,<%=@organization.longitude%>">Directions</a>
   <%end%>
 
-  </div>
+</div>
 
-<div class="main col-lg-6">
+<div class="main col-lg-5">
 
   <h2>Programs</h2>
   <%@organization.programs.each do |program| %>
@@ -39,4 +39,7 @@
     <p class='place' data-lat='<%= @organization.latitude || "" %>' data-lng= '<%= @organization.longitude || "" %>' >You are currently  </p>
   <%end%>
 
+</div>
+<div class="main col-lg-2">
+    <A HREF="/contact?flag_inaccurate_org=<%= @organization.id %>"><%= image_tag("flag_red.png", :alt => "Flag as Inaccurate", :title => "Flag as inaccurate") %> Flag as Inaccurate</a>
 </div>

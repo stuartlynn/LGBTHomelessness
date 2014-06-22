@@ -1,5 +1,23 @@
-<div class="main col-lg-12">
-	<h1><%= content_for(:title, "Contact Us") %>Contact Us</h1>
+ <section class="round">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+ </section>
+
+ <% if params[:flag_inaccurate_org] %>
+    <div class="main col-lg-12">
+        <h1>Inaccurate Information Report</h1>
+        Please include what Organization has inaccurate information and what is inaccurate about it in the form below. You must click Submit to complete your report.<br /><br />
+<% elsif params[:flag_inaccurate_prog] %>
+    <div class="main col-lg-12">
+        <h1>Inaccurate Information Report</h1>
+        Please include what program has inaccurate information and what is inaccurate about it in the form below. You must click Submit to complete your report.<BR /><br />
+<% else %>
+    <h1><%= content_for(:title, "Contact Us") %>Contact Us</h1>
+     <div class="main col-lg-12">
+<% end %>
+
+
 		<form action="/contact" method="post">
             <fieldset>
             	<label name="name">Name<span class="required"> *</span></label>
