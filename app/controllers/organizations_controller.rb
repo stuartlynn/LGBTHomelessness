@@ -22,7 +22,8 @@ class OrganizationsController < ActionController::Base
     end
 
     if(params[:services_group])
-      query = Program.service_query(query, params[:services_group].join(",").split(","))
+      #query = Program.service_query(query, params[:services_group].join(",").split(","))
+      query = query.services_offered(params[:services_group].join(",").split(","))
     end
 
     @organizations = query.collect{|p| p.organization}.uniq
