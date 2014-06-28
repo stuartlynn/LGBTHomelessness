@@ -31,4 +31,16 @@ class HomeController < ApplicationController
     
   end 
 
+  def wish_lists
+
+  end
+
+  def donate_money
+
+  end
+
+  def give_help
+
+  end
+
 end
