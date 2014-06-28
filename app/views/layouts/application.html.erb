@@ -13,14 +13,23 @@
 		<%= link_to(image_tag("LGBTHomelessness_Logo.png", :class => "logo", :alt => "logo", :title => "LGBT Homelessness"), "/") %>
 		<nav>
 			<ul>
-				<li><%= link_to "About", about_path %></li>
 				<li><%= link_to "Search Resources", who_are_you_path %></li>
         <LI><%= link_to "Resources List", org_list_path %></li>
 				<li><%= link_to "Give Help", give_help_path %></li>
         <li><%= link_to "Services Calendar", calendar_path %></li>
-				<li><%= link_to "Contact Us", contact_path %></li>
 			</ul>
+      <span class="sub-nav">
+        <%= link_to "About", about_path %> | <%= link_to "Contact Us", contact_path %>
+        &nbsp;&nbsp;&nbsp;
+        <a href="http://twitter.com/lgbtqhomeless" alt="Follow @LGBTQHomeless on Twitter!">
+          <%= image_tag("twitter-icon.png", :alt => "Follow @LGBTQHomeless on Twitter",
+                :title => "@LGBTQHomeless", :width => 51, :height => 51) %> </a>
+        <A HREF="http://www.pinterest.com/lgbthomelessnes/">
+          <%= image_tag("App-Pinterest-icon.png", :alt => "Follow LGBTHomelessness on Pinterest",
+                :width => 51,:height => 51) %></a>
+      </span>
 		</nav>
+
 	</header>
 
 <%= yield %>

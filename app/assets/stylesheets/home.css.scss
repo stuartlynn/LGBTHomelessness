@@ -14,10 +14,14 @@ header {display: block; margin-bottom: 0 !important; padding-bottom: 1em; backgr
 
 .logo {max-width: 150px; float: left; display: block; margin: .5em 0; padding: .5em;}
 
-nav {float: right; margin-top: 1.5em;}
+nav {float: right; margin-top: 0.5em;}
 nav li { list-style: none; float: left; padding: 1em; font-size: 1.25em; text-transform: uppercase;}
 nav li a {color: #666;}
 nav li a:hover {color: #D43F26; text-decoration: none;};
+
+.sub-nav {float:right;}
+.sub-nav a {color:#666;}
+.sub-nav a:hover {color:#D43F26;}
 
 .jumbotron h1 {line-height: 1; display: table-cell; vertical-align: middle; color: #fff; position: absolute; top: 35%;}
 .jumbotron {height: 300px; background: image-url("lgbt_home.jpg") 50% 50%; background-size: cover;}
@@ -75,3 +79,4 @@ padding-left: 0 !important;
 padding-right: 0 !important;
 }
 }
+
