@@ -5,4 +5,9 @@ class Organization < ActiveRecord::Base
   def friendliness_ratings
     programs.collect{|p| p.friendliness_rating}.uniq
   end
+    
+  def get_services
+    programs.each_with_object([]) {|prog, arr| arr << prog.services }.uniq.join(" ")
+  end
+
 end
