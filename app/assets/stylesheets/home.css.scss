@@ -86,12 +86,12 @@ padding-right: 0 !important;
 
 /* RAINBOW COLORS */
 
-.red {background: #D04230; }
-.orange {background: #D86317; }
-.yellow {background: #FFCA00; }
-.blue {background: #0051C8; }
-.green {background: #53B859; }
-.black {background: #000000; }
+.red {background: #D04230; width: 20%;}
+.orange {background: #D86317; width: 20%;}
+.yellow {background: #FFCA00; width: 20%;}
+.blue {background: #0051C8; width: 20%;}
+.green {background: #53B859; width: 20%;}
+.purple {background: purple; width: 20%;}
 
 .stat-div {
   padding: 30px;
@@ -110,10 +110,38 @@ padding-right: 0 !important;
   color: #000000;
 }
 
+.white-container {
+	background-color: #ffffff;
+	color: #000000;
+}
+
 .jumbotron_mobile {
   padding: 30px;
   margin-bottom: 30px;
-  color: inherit;
+  color: #ffffff;
   background-color: #2986a3;
+  text-align: center;
 }
 
+.mobile-blue-txt {
+color: #2987a1;
+font-family: inherit;
+text-transform: uppercase;
+}
+
+.h1-mobile {
+color: #ffffff;
+font-family: inherit;
+font-size: 36px;
+}
+
+.h2-mobile {
+color: #ffffff;
+font-family: inherit;
+font-size: 30px;
+}
+
+.triangle-mobile {
+display:block;
+margin:auto;
+}

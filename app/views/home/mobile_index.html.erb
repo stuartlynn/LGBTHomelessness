@@ -5,18 +5,27 @@
  </section>
 
 <div class="col-lg-6">
-  	<span class='jumbotron-mobile'>
+  	<span class='jumbotron-mobile h1-mobile'>
   	Need a hand?<BR />
   	You are not alone.
 	</span>
   <br /><br />
-  <table class='stat-div'>
+
+  <span class='stat-div'>
+  	<table>
   	<TR>
   	<td><h3>40%</h3> 
   	<td>of homeless youth<br />
   		identify as LGBT.
   	</tr>
-  </table>
+    </table>
+  </span>
+  <span class='red'>&nbsp;</span>
+  <span class='orange'>&nbsp;</span>
+  <span class='yellow'>&nbsp;</span>
+  <span class='blue'>&nbsp;</span>
+  <span class='green'>&nbsp;</span>
+  <span class='purple'>&nbsp;</span>
   <BR /><br />
   <span class='blue-container'>
   	Find resources to connect with
@@ -26,14 +35,19 @@
   <%= image_tag("icons.png", :alt => "icons",
                 :title => "icons", :width => 320, :height => 67) %>
   <BR /></br />
-  WE HAVE HUNDREDS OF RESOURCES<Br />
+  <span class='white-container'>
+  	<span class='triangle-mobile'><center>  <%= image_tag("bluegreen-triangle.png", :alt => "triangle",
+                :title => "triangle", :width => 49, :height => 33) %> </center></span>
+  <span class='mobile-blue-txt'>WE HAVE HUNDREDS OF RESOURCES</span><Br />
   Tell us more about you so we<br />
   can narrow down the options.
+  </span>
 </div>
 
 
-	<form method='get' action='/organizations'>
-<p>1. What service do you need?<span class="required"> *</span></p>
+	<form method='get' action='/organizations' style='padding: 3px;'>
+<span class='gray-container'>
+	<p>1. What service do you need?<span class="required"> *</span></p>
 <select required='true' name="service" id="service">
 <option selected="selected" disabled="disabled" value="">Select a service</option>
 		<option value="housing">Shelter</option>
@@ -50,21 +64,25 @@
 		<option value="activism">Activism</option>
 		<option value="internet access">Internet Access</option>
 		</select>
-
+</span>
+<span class='white-container'>
 <p>2. Where are you located?<span class="required"> *</span></p>
 <select required='true' name="city" id="city">
 <option selected="selected" disabled="disabled" value="">Select a metro area</option>
 		<option value="Chicago">Chicago</option>
 		<option value="Los Angeles">Los Angeles</option>
 		</select>
-
+</span>
+<span class='gray-container'>
 <P>3. Are you homeless or unstably housed?</p>
 		<input type="radio" name="homeless" value="yes"> Yes<br />
 		<input type="radio" name="homeless" value="no"> No<br /><br />
 		<small>We will provide you resources either way.</small>
-
+</span>
+<span class='white-container'>
 <p>4. How old are you?<span class="required"> *</span></p>
-		<small>We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</small></p>
+		<!--<small>We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</small>
+	--></p>
 		<select required='true' name="age" id="age">
 		<option selected="selected" disabled="disabled" value="">Select your age</option>
 		<option value="13">13</option>
@@ -82,7 +100,7 @@
 		<option value="25">25</option>
 		<option value="26">26+</option>
 		</select>
-
+</span>
 	<!--<p>What is your sexual orientation?</p>
 	<select name="orientation" id="sexualOrientation">
 	        <option selected="selected">Select your orientation</option>
@@ -98,7 +116,7 @@
 		<option value="Male">Male</option>
 		<option value="Female">Female</option>
 	</select>-->
-
+<span class='gray-container'>
 <P>5. How do you identify? (Check all that apply)</p>
 		<input type="checkbox" name="lesbian"> Lesbian<br/>
 		<input type="checkbox" name="gay"> Gay<br/>
@@ -115,7 +133,8 @@
 		<input type="checkbox" name="GNC"> Gender Non-Conforming<br/>
 		<input type="checkbox" name="Gendernotlisted"> Gender Not Listed: <input type="text" name="Genderother">
 		<br /><br />
-
+</span>
+<span class='white-container'>
 <P>6. What is your race/ethnicity? (Check all that apply)</p>
 		<p>
 		<input type="checkbox" name="afam"> African-American<br/>
@@ -127,7 +146,8 @@
 		<input type="checkbox" name="multiracial"> Multi-racial<br/>
 		<input type="checkbox" name="racenotlisted"> Race/Ethnicity Not Listed: <input type="text" name="raceOther">
 		</p>
-
+</span>
+<span class='gray-container'>
 <p>7. Programas en Español sólo?</p>
 
 	<div class="radio">
@@ -136,10 +156,10 @@
 	    <input type="radio" name="spanish" id="optionNo" value="N" checked>
 	    No<br/>
 	    <small>
-	    Do you need Spanish-speaking services?
+	    	Do you need Spanish-speaking services?
 	    </small>
 	</div>
-
+</span>
 <p>
 	<button class="resources-button">Submit</button>
 	</form>
@@ -167,6 +187,10 @@
 	    </div>
 	    <div class="form-group">
 	        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-style form-control">
+	    </div>
+	    <div >
+	    	The search results will provide a map based <br />
+			on your internet browser location.
 	    </div>
 	</form>
 
