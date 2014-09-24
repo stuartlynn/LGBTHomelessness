@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LGBTHomelessness - <%= yield(:title) %></title>
+  <%= stylesheet_link_tag "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+  <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+	<header class="navbar col-lg-12">
+		<%= link_to(image_tag("LGBTHomelessness_Logo.png", :class => "logo", :alt => "logo", :title => "LGBT Homelessness"), "/") %>
+	</header>
+
+<%= yield %>
+
+<footer class="col-lg-12">
+  <small>While we do our best to confirm and maintain the accuracy of the information here, it is subject to change without notice. <br />When in doubt call ahead. If you notice a mistake in our information, please "flag as inaccurate" or use the <%= link_to "Contact Us", contact_path %> page to notify us.</small>
+</footer>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-48750640-3', 'lgbthomelessness.com');
+  ga('send', 'pageview');
+
+</script>
+
+</body>
+</html>

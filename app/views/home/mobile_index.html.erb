@@ -1,0 +1,174 @@
+ <section class="round">
+        <% flash.each do |key, value| %>
+          <div class="flash <%= key %>"><%= value %></div>
+        <% end %>
+ </section>
+
+<div class="col-lg-6">
+  Need a hand?<BR />
+  You are not alone.
+  <br /><br />
+  <table>
+  	<TR>
+  	<td><h3>40%</h3> 
+  	<td>of homeless youth<br />
+  		identify as LGBT.
+  	</tr>
+  </table>
+  <BR /><br />
+  Find resources to connect with
+  the love and support you need.
+  <BR /></br />
+  WE HAVE HUNDREDS OF RESOURCES<Br />
+  Tell us more about you so we<br />
+  can narrow down the options.
+</div>
+
+
+	<form method='get' action='/organizations'>
+<p>1. What service do you need?<span class="required"> *</span></p>
+<select required='true' name="service" id="service">
+<option selected="selected" disabled="disabled" value="">Select a service</option>
+		<option value="housing">Shelter</option>
+		<option value="drop-in">Drop-In</option>
+		<option value="food">Food</option>
+		<option value="hotline">Hotlines</option>
+		<option value="health">Health</option>
+		<option value="Counseling">Counseling</option>
+		<option value="legal">Legal</option>
+		<option value="domestic violence">Domestic Violence</option>
+		<option value="education">Education</option>
+		<option value="employment">Empolyment</option>
+		<option value="arts">Art</option>
+		<option value="activism">Activism</option>
+		<option value="internet access">Internet Access</option>
+		</select>
+
+<p>2. Where are you located?<span class="required"> *</span></p>
+<select required='true' name="city" id="city">
+<option selected="selected" disabled="disabled" value="">Select a metro area</option>
+		<option value="Chicago">Chicago</option>
+		<option value="Los Angeles">Los Angeles</option>
+		</select>
+
+<P>3. Are you homeless or unstably housed?</p>
+		<input type="radio" name="homeless" value="yes"> Yes<br />
+		<input type="radio" name="homeless" value="no"> No<br /><br />
+		<small>We will provide you resources either way.</small>
+
+<p>4. How old are you?<span class="required"> *</span></p>
+		<small>We only require age to make sure we don’t show you a program you aren’t eligible for, however additional information can help refine your search further.</small></p>
+		<select required='true' name="age" id="age">
+		<option selected="selected" disabled="disabled" value="">Select your age</option>
+		<option value="13">13</option>
+		<option value="14">14</option>
+		<option value="15">15</option>
+		<option value="16">16</option>
+		<option value="17">17</option>
+		<option value="18">18</option>
+		<option value="19">19</option>
+		<option value="20">20</option>
+		<option value="21">21</option>
+		<option value="22">22</option>
+		<option value="23">23</option>
+		<option value="24">24</option>
+		<option value="25">25</option>
+		<option value="26">26+</option>
+		</select>
+
+	<!--<p>What is your sexual orientation?</p>
+	<select name="orientation" id="sexualOrientation">
+	        <option selected="selected">Select your orientation</option>
+		<option value="gay">Gay</option>
+		<option value="lesbian">Lesbian</option>
+		<option value="bisexual">Bisexual</option>
+		<option value="straight">Straight</option>
+	</select>
+
+	<p>What gender do you identify as?</p>
+	<select name="sex" id="sex">
+	        <option selected="selected">Select your gender</option>
+		<option value="Male">Male</option>
+		<option value="Female">Female</option>
+	</select>-->
+
+<P>5. How do you identify? (Check all that apply)</p>
+		<input type="checkbox" name="lesbian"> Lesbian<br/>
+		<input type="checkbox" name="gay"> Gay<br/>
+		<input type="checkbox" name="bisexual"> Bisexual<br/>
+		<input type="checkbox" name="Straight"> Straight/Heterosexual<br/>
+		<input type="checkbox" name="asexual"> Asexual<br/>
+		<input type="checkbox" name="Questioning"> Questioning my sexual orientation<br/>
+		<input type="checkbox" name="SOnotlisted"> Sexual Orientation Not Listed: <input type="text" name="SOother" ><br/>
+		<input type="checkbox" name="female"> Female <br/>
+		<input type="checkbox" name="male"> Male <br/>
+		<input type="checkbox" name="transfemale"> Trans Female <br/>
+		<input type="checkbox" name="transmale"> Trans Male<br/>
+		<input type="checkbox" name="Cisgenderd"> Cisgendered<br/>
+		<input type="checkbox" name="GNC"> Gender Non-Conforming<br/>
+		<input type="checkbox" name="Gendernotlisted"> Gender Not Listed: <input type="text" name="Genderother">
+		<br /><br />
+
+<P>6. What is your race/ethnicity? (Check all that apply)</p>
+		<p>
+		<input type="checkbox" name="afam"> African-American<br/>
+		<input type="checkbox" name="white"> Caucasian / White<br/>
+		<input type="checkbox" name="hispanic"> Hispanic / Latino<br/>
+		<input type="checkbox" name="asian"> Asian <br/>
+		<input type="checkbox" name="nativehawaii"> Native Hawaiian or Other Pacific Islander <br/>
+		<input type="checkbox" name="naam"> American Indian / Native American or Alaska Native <br/>
+		<input type="checkbox" name="multiracial"> Multi-racial<br/>
+		<input type="checkbox" name="racenotlisted"> Race/Ethnicity Not Listed: <input type="text" name="raceOther">
+		</p>
+
+<p>7. Programas en Español sólo?</p>
+
+	<div class="radio">
+	    <input type="radio" name="spanish" id="optionYes" value="Y">
+	    Yes</br>
+	    <input type="radio" name="spanish" id="optionNo" value="N" checked>
+	    No<br/>
+	    <small>
+	    Do you need Spanish-speaking services?
+	    </small>
+	</div>
+
+<p>
+	<button class="resources-button">Submit</button>
+	</form>
+
+	<ul>
+		<LI><%= link_to "About", about_path %></li>
+		<LI><%= link_to "Contact Us", contact_path %></li>
+		<li><%= link_to "Give Help", give_help_path %></li>
+		<li><%= link_to "Services Calendar", calendar_path %></li>
+		<LI><a href="http://twitter.com/lgbtqhomeless" alt="Follow @LGBTQHomeless on Twitter!">
+          <%= image_tag("twitter-icon.png", :alt => "Follow @LGBTQHomeless on Twitter",
+                :title => "@LGBTQHomeless", :width => 51, :height => 51) %> </a>
+	</ul>
+
+<div class="col-lg-12">
+	<!-- Begin MailChimp Signup Form -->
+	<div class="mailchimp">
+	<h4 class="subscribe">Subscribe to our supporter mailing list</h4>
+	<div id="mc_embed_signup">
+	<form action="http://lgbthomelessness.us8.list-manage1.com/subscribe/post?u=78316305daef30d40b00afba9&amp;id=fc129acb37" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline" target="_blank" novalidate>
+	        <label for="mce-EMAIL">Email Address  <span class="required">*</span>
+	</label></br>
+	<div class="form-group">
+	        <input type="email" value="" name="EMAIL" class="required email input-block-level input-lg form-control" id="mce-EMAIL">
+	    </div>
+	    <div class="form-group">
+	        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button form-control">
+	    </div>
+	</form>
+
+		        <div id="mce-responses" class="clear">
+	                <div class="response" id="mce-error-response" style="display:none"></div>
+	                <div class="response" id="mce-success-response" style="display:none"></div>
+	        </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+	    <div style="position: absolute; left: -5000px;"><input type="text" name="b_78316305daef30d40b00afba9_fc129acb37" tabindex="-1" value=""></div>
+	</div>
+	</div>
+	<!--End mc_embed_signup-->
+</div>
