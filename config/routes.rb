@@ -17,7 +17,7 @@ LGBTHomelessness::Application.routes.draw do
   get 'wish_lists' => "home#wish_lists"
   get 'donate_money' => "home#donate_money"
   get 'give_help' => "home#give_help"
-
+  get 'mobile' => "home#mobile"
   post 'sms_request' => "sms#received"
   get  'sms_test'    => "sms#test"
 

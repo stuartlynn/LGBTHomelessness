@@ -1,5 +1,5 @@
 class HomeController < ApplicationController
-
+  layout "application_mobile", :only => [ :mobile ]
   def index
 
   end
@@ -25,6 +25,10 @@ class HomeController < ApplicationController
 
   def contact
 
+  end
+
+  def mobile
+    render 'mobile_index'
   end
 
   def org_list
