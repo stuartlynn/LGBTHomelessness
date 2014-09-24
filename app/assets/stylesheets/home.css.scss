@@ -80,3 +80,40 @@ padding-right: 0 !important;
 }
 }
 
+// from 9/24/14 Hackathon for Social Good
+
+.submit-style {display: block; border: 2px solid #FFCA00; background: #2986A3; color: #fff; text-align: left; margin: 2em 0; border-radius: 4px; padding: 8px; }
+
+/* RAINBOW COLORS */
+
+.red {background: #D04230; }
+.orange {background: #D86317; }
+.yellow {background: #FFCA00; }
+.blue {background: #0051C8; }
+.green {background: #53B859; }
+.black {background: #000000; }
+
+.stat-div {
+  padding: 30px;
+  margin-bottom: 30px;
+  background-color: #ffe998;
+  color: #ffe99b;
+}
+
+.blue-container {
+  background-color: #96c4d3;
+  color: inherit;
+}
+
+.gray-container {
+  background-color: #96c4d3;
+  color: #000000;
+}
+
+.jumbotron_mobile {
+  padding: 30px;
+  margin-bottom: 30px;
+  color: inherit;
+  background-color: #2986a3;
+}
+

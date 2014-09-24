@@ -5,10 +5,12 @@
  </section>
 
 <div class="col-lg-6">
-  Need a hand?<BR />
-  You are not alone.
+  	<span class='jumbotron-mobile'>
+  	Need a hand?<BR />
+  	You are not alone.
+	</span>
   <br /><br />
-  <table>
+  <table class='stat-div'>
   	<TR>
   	<td><h3>40%</h3> 
   	<td>of homeless youth<br />
@@ -16,8 +18,13 @@
   	</tr>
   </table>
   <BR /><br />
-  Find resources to connect with
-  the love and support you need.
+  <span class='blue-container'>
+  	Find resources to connect with
+  	the love and support you need.
+  </span>
+  <br /><br />
+  <%= image_tag("icons.png", :alt => "icons",
+                :title => "icons", :width => 320, :height => 67) %>
   <BR /></br />
   WE HAVE HUNDREDS OF RESOURCES<Br />
   Tell us more about you so we<br />
@@ -159,7 +166,7 @@
 	        <input type="email" value="" name="EMAIL" class="required email input-block-level input-lg form-control" id="mce-EMAIL">
 	    </div>
 	    <div class="form-group">
-	        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="subscribe-button form-control">
+	        <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="submit-style form-control">
 	    </div>
 	</form>
 
