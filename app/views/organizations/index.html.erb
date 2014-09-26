@@ -2,7 +2,6 @@
   &nbsp;
 </div>
   <div class="main col-lg-10">
-
   <% unless @organizations.empty? %>
       <%=
          first_valid  = @organizations.select{|o| o.latitude}.first
@@ -18,12 +17,12 @@
         end
 
        %>
-
       <ul class='list-group results'>
         <% @organizations.each do |organization| %>
-
           <li class='list-group-item place sortable' data-lat='<%= organization.latitude || "" %>' data-lng= '<%= organization.longitude || "" %>' >
             <%= link_to organization.name, organization %>
+
+              <%= organization.get_services %>
 
             <span class="friendliness">
                 <% organization.friendliness_ratings.each do |rating|%>

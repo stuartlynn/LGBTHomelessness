@@ -1,5 +1,6 @@
 class Program < ActiveRecord::Base
   belongs_to :organization
+  has_many :locations
 
   scope :friendliness, ->(rate) {where("friendliness_rating = ? OR friendliness_rating IS NULL", rate)}
   scope :age_range, -> (age){ where("min_age <= ? OR min_age IS null OR min_age = 0", age).where( "max_age >= ? OR max_age IS null OR max_age = 0", age)}
@@ -20,6 +21,5 @@ class Program < ActiveRecord::Base
     end
     output
   end
-
 
 end

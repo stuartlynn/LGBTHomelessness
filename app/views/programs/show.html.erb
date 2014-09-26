@@ -38,6 +38,9 @@
   <div class="main col-lg-5">
       <% if @program.description != "" %>
         <h2>Program Description</h2>
+        <% if @program.website %>
+         <p> Website: <a href='<%=@program.website%>'><%= @program.website %></a></p>
+        <% end %>
         <p><%= @program.description %></p>
       <%end%>
 

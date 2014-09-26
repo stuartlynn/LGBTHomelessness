@@ -26,8 +26,12 @@ class OrganizationsController < ActionController::Base
       query = query.services_offered(params[:services_group].join(",").split(","))
     end
 
-    @organizations = query.collect{|p| p.organization}.uniq
-    respond_with @organizations
+    @organizations = query.collect do |p| 
+      if p.organization.city == params[:location]
+        p.organization 
+      end
+    end
+    respond_with @organizations.uniq
   end
 
   def edit

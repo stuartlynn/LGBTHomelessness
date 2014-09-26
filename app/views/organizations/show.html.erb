@@ -1,20 +1,17 @@
 <div class="main col-lg-5">
     <h1><%=@organization.name%></h1>
 
-  <% if @organization.latitude and @organization.longitude %>
-      <%= map(:center => {
-            :latlng => [@organization.latitude, @organization.longitude],
-            :zoom => 12,
-          },
-          :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
-          :markers => [{
-              :latlng => [@organization.latitude, @organization.longitude]
-          }],
-          :max_zoom => 16
-      ) %>
+  <% if @organization.locations != [] %>
+        <%= map(:center => {
+              :latlng => [@organization.latitude, @organization.longitude],
+              :zoom => 12,
+            },
+            :tile_layer => "http://openmapsurfer.uni-hd.de/tiles/roads/x={x}&y={y}&z={z}",
+            :markers => @organization.locations.select{|o| o.latitude and o.longitude }.collect{|o| {:latlng => [o.latitude, o.longitude]}},
+            :max_zoom => 16
+        ) %>
       <a class='directions' href="http://maps.apple.com/?ll=<%=@organization.latitude%>,<%=@organization.longitude%>">Directions</a>
   <%end%>
-
 </div>
 
 <div class="main col-lg-5">
@@ -25,6 +22,11 @@
       <li><%=link_to @organization.name, program_path(program.id) %> </li>
     <%else%>
       <li><%=link_to program.name, program_path(program.id)%> </li>
+        <% program.locations.each do |prog| %>
+          <% unless prog.latitude == @organization.latitude && prog.latitude == @organization.latitude %>
+            <%= prog.address %><br><%= prog.city %>, <%= prog.state %> <%= prog.zip %>
+          <% end %>
+        <% end %>
     <%end%>
   <%end%>
 
