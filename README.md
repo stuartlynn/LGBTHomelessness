@@ -2,4 +2,4 @@ LGBTHomelessness
 ================
 
 
-Civic Hack Day project to provide information about LBGT homeless resources in Chicago
+Civic Hack Day project to provide information about LGBT homeless resources in Chicago
